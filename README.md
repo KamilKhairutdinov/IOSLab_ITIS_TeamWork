@@ -4,6 +4,6 @@
 
 ДЗ 1
  - Хайррутдинов Камил
-   Базовая архитектура: Router, AppCoordinator, AuthFlowCoordinator, BaseCoordinator + протоколы для управления флоу
-   Добавить snapkit
-   часть CoordinatorFactory и ModuleFactory
+   - Базовая архитектура: Router, AppCoordinator, AuthFlowCoordinator, BaseCoordinator + протоколы для управления флоу
+   - Добавить snapkit
+   - часть CoordinatorFactory и ModuleFactory
