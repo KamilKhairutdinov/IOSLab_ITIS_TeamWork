@@ -8,6 +8,9 @@
 import Foundation
 
 protocol CoordinatorFactoryProtocol {
+    // MARK: - Хайрутдинов Камил
     func createAppCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AppCoordinator
-    func createAuthFlowCoordinator()
+
+    // MARK: - Хайрутдинов Камил
+    func createAuthFlowCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AuthFlowCoordinator
 }

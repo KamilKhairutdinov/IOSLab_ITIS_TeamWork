@@ -26,7 +26,7 @@ class AppCoordinator: BaseCoordinator {
         let authFlowCoordinator = AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory)
         addDependency(authFlowCoordinator)
         authFlowCoordinator.start()
-        authFlowCoordinator.flowComplitionHandler = { [weak self] in
+        authFlowCoordinator.flowCompletionHandler = { [weak self] in
             guard let self else { return }
             self.isLoggedIn = true
             self.runMainFlow()

@@ -7,7 +7,8 @@
 
 import Foundation
 
+// MARK: - Хайрутдинов Камил
 protocol CoordinatorProtocol: AnyObject {
-    var flowComplitionHandler: (() -> Void)? { get set }
+    var flowCompletionHandler: (() -> Void)? { get set }
     func start()
 }

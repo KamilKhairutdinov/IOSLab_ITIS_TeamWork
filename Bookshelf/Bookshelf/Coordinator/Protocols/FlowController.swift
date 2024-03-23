@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Хайрутдинов Камил
 protocol FlowController: AnyObject {
-    var complitionHandler: (() -> Void)? { get set }
+    var completionHandler: (() -> Void)? { get set }
 }

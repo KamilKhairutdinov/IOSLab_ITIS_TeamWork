@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Хайрутдинов Камил
 class AuthFlowCoordinator: BaseCoordinator {
     private var router: RouterProtocol
     private var coordinatorFactory: CoordinatorFactoryProtocol
@@ -17,11 +18,10 @@ class AuthFlowCoordinator: BaseCoordinator {
     }
 
     override func start() {
-        print("asdasd")
         showAuthScreen()
     }
 
     private func showAuthScreen() {
-        router.push(ViewController(), animated: true)
+        // ToDo router.push(, animated: true)
     }
 }

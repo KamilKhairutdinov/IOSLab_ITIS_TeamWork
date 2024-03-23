@@ -7,10 +7,11 @@
 
 import Foundation
 
+// MARK: - Хайрутдинов Камил
 class BaseCoordinator: CoordinatorProtocol {
 
     var childCoordinators: [CoordinatorProtocol]
-    var flowComplitionHandler: (() -> Void)?
+    var flowCompletionHandler: (() -> Void)?
 
     init() {
         childCoordinators = []
@@ -20,7 +21,6 @@ class BaseCoordinator: CoordinatorProtocol {
 
         fatalError("func start must be overriden")
     }
-
 
     func addDependency(_ coordinator: CoordinatorProtocol) {
         guard !childCoordinators.contains(where: { $0 === coordinator }) else { return }

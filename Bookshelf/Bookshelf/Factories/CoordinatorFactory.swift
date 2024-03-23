@@ -9,13 +9,14 @@ import UIKit
 
 class CoordinatorFactory: CoordinatorFactoryProtocol {
 
+    // MARK: - Хайрутдинов Камил
     func createAppCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AppCoordinator {
         AppCoordinator(router: router, coordinatorFactory: coordinatorFactory)
     }
-    
-    func createAuthFlowCoordinator() {
 
+    // MARK: - Хайрутдинов Камил
+    func createAuthFlowCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AuthFlowCoordinator {
+        AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory)
     }
-    
 }
 

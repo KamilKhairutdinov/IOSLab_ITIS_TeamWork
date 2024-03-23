@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		270789692BAE060B00874D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270789682BAE060B00874D60 /* AppDelegate.swift */; };
 		2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896A2BAE060B00874D60 /* SceneDelegate.swift */; };
-		2707896D2BAE060B00874D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896C2BAE060B00874D60 /* ViewController.swift */; };
 		270789722BAE061000874D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270789712BAE061000874D60 /* Assets.xcassets */; };
 		270789752BAE061000874D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270789732BAE061000874D60 /* LaunchScreen.storyboard */; };
 		272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172652BAE08BA00C2990F /* RouterProtocol.swift */; };
@@ -23,13 +22,14 @@
 		2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */; };
 		272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */; };
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
+		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
+		27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		270789652BAE060B00874D60 /* Bookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270789682BAE060B00874D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2707896A2BAE060B00874D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2707896C2BAE060B00874D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		270789712BAE061000874D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270789742BAE061000874D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270789762BAE061000874D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 		272172832BAE0F5100C2990F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +78,11 @@
 		270789672BAE060B00874D60 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				2721727E2BAE0F0500C2990F /* Flows */,
 				2707897C2BAE06D000874D60 /* App */,
 				272172622BAE07CD00C2990F /* Router */,
 				272172612BAE07C600C2990F /* Coordinator */,
+				2721727E2BAE0F0500C2990F /* Flows */,
 				272172632BAE089800C2990F /* Factories */,
-				2707896C2BAE060B00874D60 /* ViewController.swift */,
 				2707897D2BAE06D600874D60 /* Supporting Files */,
 			);
 			path = Bookshelf;
@@ -130,6 +131,7 @@
 			children = (
 				272172642BAE08A300C2990F /* Protocols */,
 				2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */,
+				27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */,
+				27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -275,9 +278,10 @@
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */,
-				2707896D2BAE060B00874D60 /* ViewController.swift in Sources */,
+				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
+				27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */,
 				2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
