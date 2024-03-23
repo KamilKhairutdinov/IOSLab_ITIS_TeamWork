@@ -12,5 +12,9 @@ protocol CoordinatorFactoryProtocol {
     func createAppCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AppCoordinator
 
     // MARK: - Хайрутдинов Камил
-    func createAuthFlowCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AuthFlowCoordinator
+    func createAuthFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol
+    ) -> AuthFlowCoordinator
 }

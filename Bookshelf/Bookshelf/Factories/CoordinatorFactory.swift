@@ -15,8 +15,12 @@ class CoordinatorFactory: CoordinatorFactoryProtocol {
     }
 
     // MARK: - Хайрутдинов Камил
-    func createAuthFlowCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) -> AuthFlowCoordinator {
-        AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory)
+    func createAuthFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol
+    ) -> AuthFlowCoordinator {
+        AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
     }
 }
 

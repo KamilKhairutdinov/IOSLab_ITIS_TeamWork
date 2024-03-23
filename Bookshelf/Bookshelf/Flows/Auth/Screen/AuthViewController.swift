@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 enum AuthStates {
     case signIn, singUp
@@ -46,9 +47,21 @@ class AuthViewController: UIViewController, FlowControllerWithValue {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        configureUI()
     }
 }
 
 extension AuthViewController {
+    private func configureUI() {
+        let stackView = UIStackView(arrangedSubviews: [signInButton, signUpButton])
+        stackView.axis = .vertical
+        stackView.spacing = 20
+        view.addSubview(stackView)
 
+        stackView.snp.makeConstraints { make in
+            make.centerX.centerY.equalToSuperview()
+            make.left.right.equalToSuperview().inset(40)
+        }
+    }
 }

@@ -23,7 +23,7 @@ class AppCoordinator: BaseCoordinator {
     }
 
     private func runAuthFlow() {
-        let authFlowCoordinator = AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory)
+        let authFlowCoordinator = AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: ModuleFactory())
         addDependency(authFlowCoordinator)
         authFlowCoordinator.start()
         authFlowCoordinator.flowCompletionHandler = { [weak self] in

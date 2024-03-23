@@ -9,12 +9,15 @@ import UIKit
 
 // MARK: - Хайрутдинов Камил
 class AuthFlowCoordinator: BaseCoordinator {
+
     private var router: RouterProtocol
     private var coordinatorFactory: CoordinatorFactoryProtocol
+    private var moduleFactory: ModuleFactoryProtocol
 
-    init(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol) {
+    init(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol, moduleFactory: ModuleFactoryProtocol) {
         self.router = router
         self.coordinatorFactory = coordinatorFactory
+        self.moduleFactory = moduleFactory
     }
 
     override func start() {
@@ -22,6 +25,24 @@ class AuthFlowCoordinator: BaseCoordinator {
     }
 
     private func showAuthScreen() {
-        // ToDo router.push(, animated: true)
+        let authController = moduleFactory.createAuthModule()
+        authController.completionHandler = { [weak self] state in
+            guard let self else { return }
+            switch state {
+            case .signIn:
+                self.runSignInFlow()
+            case .singUp:
+                self.runSignUpFlow()
+            }
+        }
+        router.push(authController, animated: true)
+    }
+
+    private func runSignInFlow() {
+        // TODO: Кирилл
+    }
+
+    private func runSignUpFlow() {
+        // TODO: Тимур
     }
 }
