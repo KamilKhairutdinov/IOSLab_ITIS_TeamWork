@@ -26,6 +26,14 @@
 		27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */; };
 		27A18DFF2BAEFA1200FF508F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 27A18DFE2BAEFA1200FF508F /* SnapKit */; };
 		27A18E012BAEFA1200FF508F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */; };
+		BA1B57012BB02E85004E85DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BA1B57002BB02E85004E85DC /* Alamofire */; };
+		BA1B57032BB02E85004E85DC /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BA1B57022BB02E85004E85DC /* AlamofireDynamic */; };
+		BA1B57052BB02F80004E85DC /* ButtonFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B57042BB02F80004E85DC /* ButtonFactoryProtocol.swift */; };
+		BA1B57072BB02FB9004E85DC /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B57062BB02FB9004E85DC /* ButtonFactory.swift */; };
+		BA1B570B2BB044DD004E85DC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B570A2BB044DD004E85DC /* SignInViewController.swift */; };
+		BA1B570D2BB04542004E85DC /* SignInFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B570C2BB04542004E85DC /* SignInFlowCoordinator.swift */; };
+		BA1B570F2BB04CEE004E85DC /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B570E2BB04CEE004E85DC /* SignInViewModel.swift */; };
+		BA1B57122BB052E0004E85DC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B57112BB052E0004E85DC /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,12 @@
 		272172832BAE0F5100C2990F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
 		27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		BA1B57042BB02F80004E85DC /* ButtonFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactoryProtocol.swift; sourceTree = "<group>"; };
+		BA1B57062BB02FB9004E85DC /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		BA1B570A2BB044DD004E85DC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BA1B570C2BB04542004E85DC /* SignInFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFlowCoordinator.swift; sourceTree = "<group>"; };
+		BA1B570E2BB04CEE004E85DC /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		BA1B57112BB052E0004E85DC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1B57012BB02E85004E85DC /* Alamofire in Frameworks */,
+				BA1B57032BB02E85004E85DC /* AlamofireDynamic in Frameworks */,
 				27A18DFF2BAEFA1200FF508F /* SnapKit in Frameworks */,
 				27A18E012BAEFA1200FF508F /* SnapKit-Dynamic in Frameworks */,
 			);
@@ -82,6 +98,7 @@
 		270789672BAE060B00874D60 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
+				BA1B57102BB052C1004E85DC /* Helpers */,
 				2707897C2BAE06D000874D60 /* App */,
 				272172622BAE07CD00C2990F /* Router */,
 				272172612BAE07C600C2990F /* Coordinator */,
@@ -136,6 +153,7 @@
 				272172642BAE08A300C2990F /* Protocols */,
 				2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */,
 				27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */,
+				BA1B57062BB02FB9004E85DC /* ButtonFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -145,6 +163,7 @@
 			children = (
 				2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */,
 				27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */,
+				BA1B57042BB02F80004E85DC /* ButtonFactoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -162,6 +181,7 @@
 		2721727E2BAE0F0500C2990F /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				BA1B57082BB0414D004E85DC /* SignIn */,
 				2721727F2BAE0F1100C2990F /* Auth */,
 			);
 			path = Flows;
@@ -184,6 +204,32 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		BA1B57082BB0414D004E85DC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B57092BB043C5004E85DC /* Screen */,
+				BA1B570C2BB04542004E85DC /* SignInFlowCoordinator.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		BA1B57092BB043C5004E85DC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B570A2BB044DD004E85DC /* SignInViewController.swift */,
+				BA1B570E2BB04CEE004E85DC /* SignInViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		BA1B57102BB052C1004E85DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B57112BB052E0004E85DC /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +250,8 @@
 			packageProductDependencies = (
 				27A18DFE2BAEFA1200FF508F /* SnapKit */,
 				27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */,
+				BA1B57002BB02E85004E85DC /* Alamofire */,
+				BA1B57022BB02E85004E85DC /* AlamofireDynamic */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -235,6 +283,7 @@
 			mainGroup = 2707895C2BAE060B00874D60;
 			packageReferences = (
 				27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BA1B56FF2BB02E85004E85DC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -287,16 +336,22 @@
 			files = (
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
+				BA1B57072BB02FB9004E85DC /* ButtonFactory.swift in Sources */,
+				BA1B570D2BB04542004E85DC /* SignInFlowCoordinator.swift in Sources */,
+				BA1B570F2BB04CEE004E85DC /* SignInViewModel.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
+				BA1B57122BB052E0004E85DC /* Observable.swift in Sources */,
 				27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */,
 				2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
+				BA1B57052BB02F80004E85DC /* ButtonFactoryProtocol.swift in Sources */,
+				BA1B570B2BB044DD004E85DC /* SignInViewController.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
@@ -522,6 +577,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		BA1B56FF2BB02E85004E85DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -534,6 +597,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		BA1B57002BB02E85004E85DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA1B56FF2BB02E85004E85DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BA1B57022BB02E85004E85DC /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA1B56FF2BB02E85004E85DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

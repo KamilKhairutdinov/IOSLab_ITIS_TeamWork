@@ -39,7 +39,18 @@ class AuthFlowCoordinator: BaseCoordinator {
     }
 
     private func runSignInFlow() {
-        // TODO: Кирилл
+        // MARK: - Абрамов Кирилл
+        let signInFlowCoordinator = coordinatorFactory.createSignInFlowCoordinator(
+            router: router,
+            coordinatorFactory: coordinatorFactory,
+            moduleFactory: moduleFactory)
+        addDependency(signInFlowCoordinator)
+        signInFlowCoordinator.flowCompletionHandler = { [weak self] in
+            guard let self else { return }
+            self.removeDependency(signInFlowCoordinator)
+            self.flowCompletionHandler?()
+        }
+        signInFlowCoordinator.start()
     }
 
     private func runSignUpFlow() {
