@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A60B1D02BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1CF2BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift */; };
+		0A60B1D32BAFAF7700CCF145 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1D22BAFAF7700CCF145 /* SignUpController.swift */; };
+		0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1D42BB07DD500CCF145 /* SignUpViewModel.swift */; };
+		0A60B1D72BB0837D00CCF145 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */; };
+		0A60B1DA2BB09BD800CCF145 /* TextFieldFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1D92BB09BD800CCF145 /* TextFieldFactory.swift */; };
+		0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1DC2BB0A07B00CCF145 /* Observable.swift */; };
+		0A60B1E12BB0A63D00CCF145 /* SignUpServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1E02BB0A63D00CCF145 /* SignUpServiceProtocol.swift */; };
+		0A60B1E32BB0A74F00CCF145 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1E22BB0A74F00CCF145 /* SignUpService.swift */; };
+		0A60B1E52BB0AAAF00CCF145 /* ValidationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */; };
+		0A60B1E72BB0AC1600CCF145 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */; };
+		0A60B1E92BB0AFF800CCF145 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1E82BB0AFF800CCF145 /* ServiceFactory.swift */; };
+		0A60B1EB2BB0B02400CCF145 /* ServiceFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60B1EA2BB0B02400CCF145 /* ServiceFactoryProtocol.swift */; };
+		0A60B1EF2BB0DA6B00CCF145 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A60B1EE2BB0DA6B00CCF145 /* FirebaseAuth */; };
+		0A60B1F12BB0DA6B00CCF145 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A60B1F02BB0DA6B00CCF145 /* FirebaseFirestore */; };
 		270789692BAE060B00874D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270789682BAE060B00874D60 /* AppDelegate.swift */; };
 		2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896A2BAE060B00874D60 /* SceneDelegate.swift */; };
 		270789722BAE061000874D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270789712BAE061000874D60 /* Assets.xcassets */; };
@@ -24,11 +38,21 @@
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
 		27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */; };
-		27A18DFF2BAEFA1200FF508F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 27A18DFE2BAEFA1200FF508F /* SnapKit */; };
-		27A18E012BAEFA1200FF508F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A60B1CF2BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowCoordinator.swift; sourceTree = "<group>"; };
+		0A60B1D22BAFAF7700CCF145 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		0A60B1D42BB07DD500CCF145 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A60B1D92BB09BD800CCF145 /* TextFieldFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFactory.swift; sourceTree = "<group>"; };
+		0A60B1DC2BB0A07B00CCF145 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		0A60B1E02BB0A63D00CCF145 /* SignUpServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpServiceProtocol.swift; sourceTree = "<group>"; };
+		0A60B1E22BB0A74F00CCF145 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceProtocol.swift; sourceTree = "<group>"; };
+		0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		0A60B1E82BB0AFF800CCF145 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		0A60B1EA2BB0B02400CCF145 /* ServiceFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryProtocol.swift; sourceTree = "<group>"; };
 		270789652BAE060B00874D60 /* Bookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270789682BAE060B00874D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2707896A2BAE060B00874D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,14 +79,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A18DFF2BAEFA1200FF508F /* SnapKit in Frameworks */,
-				27A18E012BAEFA1200FF508F /* SnapKit-Dynamic in Frameworks */,
+				0A60B1EF2BB0DA6B00CCF145 /* FirebaseAuth in Frameworks */,
+				0A60B1F12BB0DA6B00CCF145 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A60B1CE2BAFA44700CCF145 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0A60B1D12BAFAF6200CCF145 /* Screen */,
+				0A60B1CF2BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0A60B1D12BAFAF6200CCF145 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0A60B1D22BAFAF7700CCF145 /* SignUpController.swift */,
+				0A60B1D42BB07DD500CCF145 /* SignUpViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0A60B1DB2BB0A06A00CCF145 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A60B1DC2BB0A07B00CCF145 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A60B1DE2BB0A62000CCF145 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A60B1DF2BB0A62A00CCF145 /* Protocols */,
+				0A60B1E22BB0A74F00CCF145 /* SignUpService.swift */,
+				0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A60B1DF2BB0A62A00CCF145 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0A60B1E02BB0A63D00CCF145 /* SignUpServiceProtocol.swift */,
+				0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		2707895C2BAE060B00874D60 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +151,9 @@
 		270789672BAE060B00874D60 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
+				0A60B1DE2BB0A62000CCF145 /* Services */,
+				0A60B1DB2BB0A06A00CCF145 /* Helpers */,
+				0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */,
 				2707897C2BAE06D000874D60 /* App */,
 				272172622BAE07CD00C2990F /* Router */,
 				272172612BAE07C600C2990F /* Coordinator */,
@@ -136,6 +208,8 @@
 				272172642BAE08A300C2990F /* Protocols */,
 				2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */,
 				27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */,
+				0A60B1D92BB09BD800CCF145 /* TextFieldFactory.swift */,
+				0A60B1E82BB0AFF800CCF145 /* ServiceFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -145,6 +219,7 @@
 			children = (
 				2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */,
 				27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */,
+				0A60B1EA2BB0B02400CCF145 /* ServiceFactoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -162,6 +237,7 @@
 		2721727E2BAE0F0500C2990F /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				0A60B1CE2BAFA44700CCF145 /* SignUp */,
 				2721727F2BAE0F1100C2990F /* Auth */,
 			);
 			path = Flows;
@@ -202,8 +278,8 @@
 			);
 			name = Bookshelf;
 			packageProductDependencies = (
-				27A18DFE2BAEFA1200FF508F /* SnapKit */,
-				27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */,
+				0A60B1EE2BB0DA6B00CCF145 /* FirebaseAuth */,
+				0A60B1F02BB0DA6B00CCF145 /* FirebaseFirestore */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -234,7 +310,8 @@
 			);
 			mainGroup = 2707895C2BAE060B00874D60;
 			packageReferences = (
-				27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0A60B1EC2BB0D8FB00CCF145 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0A60B1ED2BB0DA6B00CCF145 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -252,6 +329,7 @@
 			files = (
 				270789752BAE061000874D60 /* LaunchScreen.storyboard in Resources */,
 				270789722BAE061000874D60 /* Assets.xcassets in Resources */,
+				0A60B1D72BB0837D00CCF145 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -285,21 +363,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A60B1E92BB0AFF800CCF145 /* ServiceFactory.swift in Sources */,
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */,
+				0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
+				0A60B1DA2BB09BD800CCF145 /* TextFieldFactory.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
+				0A60B1E12BB0A63D00CCF145 /* SignUpServiceProtocol.swift in Sources */,
 				27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */,
+				0A60B1EB2BB0B02400CCF145 /* ServiceFactoryProtocol.swift in Sources */,
+				0A60B1D02BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift in Sources */,
+				0A60B1D32BAFAF7700CCF145 /* SignUpController.swift in Sources */,
 				2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */,
+				0A60B1E72BB0AC1600CCF145 /* ValidationService.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
+				0A60B1E52BB0AAAF00CCF145 /* ValidationServiceProtocol.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
+				0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
+				0A60B1E32BB0A74F00CCF145 /* SignUpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -426,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -514,26 +603,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		0A60B1EC2BB0D8FB00CCF145 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0A60B1ED2BB0DA6B00CCF145 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		27A18DFE2BAEFA1200FF508F /* SnapKit */ = {
+		0A60B1EE2BB0DA6B00CCF145 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			package = 0A60B1ED2BB0DA6B00CCF145 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
-		27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */ = {
+		0A60B1F02BB0DA6B00CCF145 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			package = 0A60B1ED2BB0DA6B00CCF145 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
