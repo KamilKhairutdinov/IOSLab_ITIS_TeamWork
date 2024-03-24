@@ -7,3 +7,11 @@
    - Базовая архитектура: Router, AppCoordinator, AuthFlowCoordinator, BaseCoordinator + протоколы для управления флоу
    - Добавить snapkit
    - часть CoordinatorFactory и ModuleFactory
+
+ - Уваров Тимур
+   - Поток регистрации: SignUpFlowController, SignUpController, SignUpViewModel,
+   - Добавил и использовал firebase
+   - TextFieldFactory
+   - ServiceFactory для DI
+   - часть CoordinatorFactory и ModuleFactory
+   - написал протоколы для factory + обновил протоколы для управления флоу
