@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 protocol ButtonFactoryProtocol {
-    
     // MARK: - Абрамов Кирилл
     func createBorderedButton(title: String, color: UIColor, action: UIAction) -> UIButton
     func createPlainButton(title: String, color: UIColor, action: UIAction) -> UIButton

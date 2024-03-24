@@ -17,4 +17,12 @@ protocol CoordinatorFactoryProtocol {
         coordinatorFactory: CoordinatorFactoryProtocol,
         moduleFactory: ModuleFactoryProtocol
     ) -> AuthFlowCoordinator
+
+    // MARK: - Абрамов Кирилл
+    func createSignInFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol
+    ) -> SignInFlowCoordinator
+
 }

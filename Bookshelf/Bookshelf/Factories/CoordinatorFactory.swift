@@ -22,5 +22,12 @@ class CoordinatorFactory: CoordinatorFactoryProtocol {
     ) -> AuthFlowCoordinator {
         AuthFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
     }
+
+    func createSignInFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol) -> SignInFlowCoordinator {
+        SignInFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+    }
 }
 

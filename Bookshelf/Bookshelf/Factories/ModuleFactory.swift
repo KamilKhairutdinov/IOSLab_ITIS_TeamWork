@@ -13,4 +13,9 @@ class ModuleFactory: ModuleFactoryProtocol {
     func createAuthModule() -> AuthViewController {
         AuthViewController()
     }
+
+    // MARK: - Абрамов Кирилл
+    func createSignInModule(viewModel: SignInViewModel) -> SignInViewController {
+        SignInViewController(viewModel: viewModel)
+    }
 }
