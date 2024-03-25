@@ -34,7 +34,17 @@ class AppCoordinator: BaseCoordinator {
         }
     }
 
+    // MARK: - Бородач Евгения
     private func runMainFlow() {
-        print("asdadadadad")
+        let tabBarVC = TabBarViewController()
+        let moduleFac = ModuleFactory()
+        let tabBarCoordinator = TabBarCoordinator(router: router, coordinator: coordinatorFactory, moduleFactory: moduleFac, controller: tabBarVC)
+        addDependency(tabBarCoordinator)
+        tabBarCoordinator.flowCompletionHandler = { [weak self] in
+            guard let self else { return }
+            self.removeDependency(tabBarCoordinator)
+        }
+        router.setRootController(tabBarVC, isNavigationBarHidden: true)
+        tabBarCoordinator.start()
     }
 }
