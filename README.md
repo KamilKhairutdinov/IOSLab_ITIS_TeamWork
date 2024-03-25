@@ -15,3 +15,10 @@
    - ServiceFactory для DI
    - часть CoordinatorFactory и ModuleFactory
    - написал протоколы для factory + обновил протоколы для управления флоу
+  
+ - Абрамов Кирилл
+   - SignInFlowCoordinator, SignInViewController, SignInViewModel,
+   - Добавил Alamofire
+   - ButtonFactory
+   - Дженерик класс Helpers/Observable
+   - Дополнил CoordinatorFactory, ModuleFactory, AuthFlowCoordinator
