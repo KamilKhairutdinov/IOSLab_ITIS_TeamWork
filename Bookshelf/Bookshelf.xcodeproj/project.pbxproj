@@ -36,12 +36,12 @@
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
 		2733750F2BB1AA5600191795 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733750E2BB1AA5600191795 /* SnapKit */; };
 		273375112BB1AA5600191795 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 273375102BB1AA5600191795 /* SnapKit-Dynamic */; };
-		273375142BB1AAC600191795 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 273375132BB1AAC600191795 /* FirebaseAuth */; };
-		273375162BB1AAC600191795 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 273375152BB1AAC600191795 /* FirebaseFirestore */; };
 		273375192BB1AAEA00191795 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 273375182BB1AAEA00191795 /* Alamofire */; };
 		2733751B2BB1AAEA00191795 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751A2BB1AAEA00191795 /* AlamofireDynamic */; };
 		2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751D2BB1AB1000191795 /* SDWebImage */; };
 		273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751F2BB1AB1000191795 /* SDWebImageMapKit */; };
+		273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 273375222BB1AC1300191795 /* FirebaseAuth */; };
+		273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 273375242BB1AC1300191795 /* FirebaseFirestore */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
 		27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */; };
 /* End PBXBuildFile section */
@@ -89,9 +89,9 @@
 				2733751B2BB1AAEA00191795 /* AlamofireDynamic in Frameworks */,
 				2733750F2BB1AA5600191795 /* SnapKit in Frameworks */,
 				2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */,
-				273375162BB1AAC600191795 /* FirebaseFirestore in Frameworks */,
-				273375142BB1AAC600191795 /* FirebaseAuth in Frameworks */,
 				273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */,
+				273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */,
+				273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */,
 				273375112BB1AA5600191795 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,12 +292,12 @@
 			packageProductDependencies = (
 				2733750E2BB1AA5600191795 /* SnapKit */,
 				273375102BB1AA5600191795 /* SnapKit-Dynamic */,
-				273375132BB1AAC600191795 /* FirebaseAuth */,
-				273375152BB1AAC600191795 /* FirebaseFirestore */,
 				273375182BB1AAEA00191795 /* Alamofire */,
 				2733751A2BB1AAEA00191795 /* AlamofireDynamic */,
 				2733751D2BB1AB1000191795 /* SDWebImage */,
 				2733751F2BB1AB1000191795 /* SDWebImageMapKit */,
+				273375222BB1AC1300191795 /* FirebaseAuth */,
+				273375242BB1AC1300191795 /* FirebaseFirestore */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -329,9 +329,9 @@
 			mainGroup = 2707895C2BAE060B00874D60;
 			packageReferences = (
 				2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				273375122BB1AAC600191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -631,14 +631,6 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		273375122BB1AAC600191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = exactVersion;
-				version = 9.6.0;
-			};
-		};
 		273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -655,6 +647,14 @@
 				minimumVersion = 5.19.0;
 			};
 		};
+		273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -667,16 +667,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
-		};
-		273375132BB1AAC600191795 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 273375122BB1AAC600191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		273375152BB1AAC600191795 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 273375122BB1AAC600191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
 		};
 		273375182BB1AAEA00191795 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -697,6 +687,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		273375222BB1AC1300191795 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		273375242BB1AC1300191795 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
