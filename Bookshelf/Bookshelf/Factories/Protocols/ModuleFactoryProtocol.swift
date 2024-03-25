@@ -13,4 +13,9 @@ protocol ModuleFactoryProtocol {
 
     // MARK: - Абрамов Кирилл
     func createSignInModule(viewModel: SignInViewModel) -> SignInViewController
+
+    // MARK: - Бородач Евгения
+    func createRecomendationsModule(viewModel: RecomendationsViewModel) -> RecomendationsViewController
+    func createLibraryModule(viewModel: LibraryViewModel) -> LibraryViewController
+    func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController
 }

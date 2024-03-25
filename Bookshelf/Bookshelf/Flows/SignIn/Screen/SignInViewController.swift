@@ -40,7 +40,7 @@ class SignInViewController: UIViewController, FlowController {
 
     private lazy var signInButton: UIButton = {
         let action = UIAction {_ in
-            // TODO: доделать
+            self.completionHandler?()
         }
         let button = buttonFactory.createBorderedButton(title: "Войти", color: .clear, action: action)
         return button

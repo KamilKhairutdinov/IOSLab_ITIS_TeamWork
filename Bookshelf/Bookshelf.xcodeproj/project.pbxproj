@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04225AF22BB10E9C009EBE27 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225AF12BB10E9C009EBE27 /* TabBarCoordinator.swift */; };
+		04225AF82BB11093009EBE27 /* RecomendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225AF72BB11093009EBE27 /* RecomendationsViewController.swift */; };
+		04225AFD2BB110FE009EBE27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225AFC2BB110FE009EBE27 /* ProfileViewController.swift */; };
+		04225AFF2BB11130009EBE27 /* RecomendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225AFE2BB11130009EBE27 /* RecomendationsCoordinator.swift */; };
+		04225B022BB11160009EBE27 /* RecomendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B012BB11160009EBE27 /* RecomendationsViewModel.swift */; };
+		04225B052BB1118E009EBE27 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B042BB1118E009EBE27 /* ProfileCoordinator.swift */; };
+		04225B072BB111A7009EBE27 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B062BB111A7009EBE27 /* ProfileViewModel.swift */; };
+		04225B092BB111D6009EBE27 /* LibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B082BB111D6009EBE27 /* LibraryCoordinator.swift */; };
+		04225B0C2BB111F7009EBE27 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B0B2BB111F7009EBE27 /* LibraryViewController.swift */; };
+		04225B0E2BB11206009EBE27 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B0D2BB11206009EBE27 /* LibraryViewModel.swift */; };
+		04225B102BB1128D009EBE27 /* TabBarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B0F2BB1128C009EBE27 /* TabBarDelegateProtocol.swift */; };
+		04225B122BB112A7009EBE27 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B112BB112A7009EBE27 /* TabBarViewController.swift */; };
+		04225B142BB14DFA009EBE27 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B132BB14DFA009EBE27 /* URLBuilder.swift */; };
+		04225B172BB15572009EBE27 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 04225B162BB15572009EBE27 /* SDWebImage */; };
+		04225B192BB15572009EBE27 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04225B182BB15572009EBE27 /* SDWebImageMapKit */; };
+		04225B1B2BB184FB009EBE27 /* LabelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B1A2BB184FB009EBE27 /* LabelFactoryProtocol.swift */; };
+		04225B1F2BB18887009EBE27 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04225B1E2BB18887009EBE27 /* LabelFactory.swift */; };
 		270789692BAE060B00874D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270789682BAE060B00874D60 /* AppDelegate.swift */; };
 		2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896A2BAE060B00874D60 /* SceneDelegate.swift */; };
 		270789722BAE061000874D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270789712BAE061000874D60 /* Assets.xcassets */; };
@@ -37,6 +54,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04225AF12BB10E9C009EBE27 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		04225AF72BB11093009EBE27 /* RecomendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsViewController.swift; sourceTree = "<group>"; };
+		04225AFC2BB110FE009EBE27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04225AFE2BB11130009EBE27 /* RecomendationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsCoordinator.swift; sourceTree = "<group>"; };
+		04225B012BB11160009EBE27 /* RecomendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsViewModel.swift; sourceTree = "<group>"; };
+		04225B042BB1118E009EBE27 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		04225B062BB111A7009EBE27 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		04225B082BB111D6009EBE27 /* LibraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
+		04225B0B2BB111F7009EBE27 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		04225B0D2BB11206009EBE27 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		04225B0F2BB1128C009EBE27 /* TabBarDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegateProtocol.swift; sourceTree = "<group>"; };
+		04225B112BB112A7009EBE27 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		04225B132BB14DFA009EBE27 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		04225B1A2BB184FB009EBE27 /* LabelFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactoryProtocol.swift; sourceTree = "<group>"; };
+		04225B1E2BB18887009EBE27 /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		270789652BAE060B00874D60 /* Bookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270789682BAE060B00874D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2707896A2BAE060B00874D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,12 +105,89 @@
 				BA1B57032BB02E85004E85DC /* AlamofireDynamic in Frameworks */,
 				27A18DFF2BAEFA1200FF508F /* SnapKit in Frameworks */,
 				27A18E012BAEFA1200FF508F /* SnapKit-Dynamic in Frameworks */,
+				04225B192BB15572009EBE27 /* SDWebImageMapKit in Frameworks */,
+				04225B172BB15572009EBE27 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04225AF02BB10E6C009EBE27 /* TabBarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04225AF12BB10E9C009EBE27 /* TabBarCoordinator.swift */,
+				04225B0F2BB1128C009EBE27 /* TabBarDelegateProtocol.swift */,
+				04225B112BB112A7009EBE27 /* TabBarViewController.swift */,
+				04225AF62BB10FE1009EBE27 /* TabsFlows */,
+			);
+			path = TabBarFlow;
+			sourceTree = "<group>";
+		};
+		04225AF62BB10FE1009EBE27 /* TabsFlows */ = {
+			isa = PBXGroup;
+			children = (
+				04225AFB2BB110C7009EBE27 /* RecomendationsFlow */,
+				04225AF92BB110AA009EBE27 /* LibraryFlow */,
+				04225AFA2BB110BA009EBE27 /* ProfileFlow */,
+			);
+			path = TabsFlows;
+			sourceTree = "<group>";
+		};
+		04225AF92BB110AA009EBE27 /* LibraryFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04225B0A2BB111DA009EBE27 /* LibraryFlow */,
+				04225B082BB111D6009EBE27 /* LibraryCoordinator.swift */,
+			);
+			path = LibraryFlow;
+			sourceTree = "<group>";
+		};
+		04225AFA2BB110BA009EBE27 /* ProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04225B032BB1116C009EBE27 /* ProfileScreen */,
+				04225B042BB1118E009EBE27 /* ProfileCoordinator.swift */,
+			);
+			path = ProfileFlow;
+			sourceTree = "<group>";
+		};
+		04225AFB2BB110C7009EBE27 /* RecomendationsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04225B002BB11134009EBE27 /* RecomendationsScreen */,
+				04225AFE2BB11130009EBE27 /* RecomendationsCoordinator.swift */,
+			);
+			path = RecomendationsFlow;
+			sourceTree = "<group>";
+		};
+		04225B002BB11134009EBE27 /* RecomendationsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				04225AF72BB11093009EBE27 /* RecomendationsViewController.swift */,
+				04225B012BB11160009EBE27 /* RecomendationsViewModel.swift */,
+			);
+			path = RecomendationsScreen;
+			sourceTree = "<group>";
+		};
+		04225B032BB1116C009EBE27 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				04225AFC2BB110FE009EBE27 /* ProfileViewController.swift */,
+				04225B062BB111A7009EBE27 /* ProfileViewModel.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		04225B0A2BB111DA009EBE27 /* LibraryFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04225B0B2BB111F7009EBE27 /* LibraryViewController.swift */,
+				04225B0D2BB11206009EBE27 /* LibraryViewModel.swift */,
+			);
+			path = LibraryFlow;
+			sourceTree = "<group>";
+		};
 		2707895C2BAE060B00874D60 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +263,7 @@
 				2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */,
 				27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */,
 				BA1B57062BB02FB9004E85DC /* ButtonFactory.swift */,
+				04225B1E2BB18887009EBE27 /* LabelFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -164,6 +274,7 @@
 				2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */,
 				27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */,
 				BA1B57042BB02F80004E85DC /* ButtonFactoryProtocol.swift */,
+				04225B1A2BB184FB009EBE27 /* LabelFactoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -183,6 +294,7 @@
 			children = (
 				BA1B57082BB0414D004E85DC /* SignIn */,
 				2721727F2BAE0F1100C2990F /* Auth */,
+				04225AF02BB10E6C009EBE27 /* TabBarFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -226,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				BA1B57112BB052E0004E85DC /* Observable.swift */,
+				04225B132BB14DFA009EBE27 /* URLBuilder.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -252,6 +365,8 @@
 				27A18E002BAEFA1200FF508F /* SnapKit-Dynamic */,
 				BA1B57002BB02E85004E85DC /* Alamofire */,
 				BA1B57022BB02E85004E85DC /* AlamofireDynamic */,
+				04225B162BB15572009EBE27 /* SDWebImage */,
+				04225B182BB15572009EBE27 /* SDWebImageMapKit */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -284,6 +399,7 @@
 			packageReferences = (
 				27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				BA1B56FF2BB02E85004E85DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				04225B152BB15572009EBE27 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -335,15 +451,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
+				04225B022BB11160009EBE27 /* RecomendationsViewModel.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				BA1B57072BB02FB9004E85DC /* ButtonFactory.swift in Sources */,
+				04225B0E2BB11206009EBE27 /* LibraryViewModel.swift in Sources */,
 				BA1B570D2BB04542004E85DC /* SignInFlowCoordinator.swift in Sources */,
 				BA1B570F2BB04CEE004E85DC /* SignInViewModel.swift in Sources */,
+				04225B142BB14DFA009EBE27 /* URLBuilder.swift in Sources */,
+				04225B072BB111A7009EBE27 /* ProfileViewModel.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
+				04225AFD2BB110FE009EBE27 /* ProfileViewController.swift in Sources */,
+				04225AF22BB10E9C009EBE27 /* TabBarCoordinator.swift in Sources */,
 				2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
+				04225B122BB112A7009EBE27 /* TabBarViewController.swift in Sources */,
+				04225B092BB111D6009EBE27 /* LibraryCoordinator.swift in Sources */,
+				04225B1B2BB184FB009EBE27 /* LabelFactoryProtocol.swift in Sources */,
+				04225B052BB1118E009EBE27 /* ProfileCoordinator.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
+				04225B102BB1128D009EBE27 /* TabBarDelegateProtocol.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
+				04225B1F2BB18887009EBE27 /* LabelFactory.swift in Sources */,
+				04225B0C2BB111F7009EBE27 /* LibraryViewController.swift in Sources */,
 				BA1B57122BB052E0004E85DC /* Observable.swift in Sources */,
 				27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */,
 				2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */,
@@ -353,8 +482,10 @@
 				BA1B57052BB02F80004E85DC /* ButtonFactoryProtocol.swift in Sources */,
 				BA1B570B2BB044DD004E85DC /* SignInViewController.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
+				04225AFF2BB11130009EBE27 /* RecomendationsCoordinator.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
+				04225AF82BB11093009EBE27 /* RecomendationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +700,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		04225B152BB15572009EBE27 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage?ysclid=lu6l3joo8m631074000";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.0;
+			};
+		};
 		27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -588,6 +727,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04225B162BB15572009EBE27 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04225B152BB15572009EBE27 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		04225B182BB15572009EBE27 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04225B152BB15572009EBE27 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		27A18DFE2BAEFA1200FF508F /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27A18DFD2BAEFA1100FF508F /* XCRemoteSwiftPackageReference "SnapKit" */;

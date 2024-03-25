@@ -29,5 +29,25 @@ class CoordinatorFactory: CoordinatorFactoryProtocol {
         moduleFactory: ModuleFactoryProtocol) -> SignInFlowCoordinator {
         SignInFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
     }
+
+    // MARK: - Бородач Евгения
+    func createRecomendationsFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol) -> RecomendationsCoordinator {
+            RecomendationsCoordinator(router: router, coordinator: coordinatorFactory, moduleFactory: moduleFactory)
+    }
+    func createLibraryFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol) -> LibraryCoordinator {
+            LibraryCoordinator(router: router, coordinator: coordinatorFactory, moduleFactory: moduleFactory)
+    }
+    func createProfileFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol) -> ProfileCoordinator {
+            ProfileCoordinator(router: router, coordinator: coordinatorFactory, moduleFactory: moduleFactory)
+    }
 }
 

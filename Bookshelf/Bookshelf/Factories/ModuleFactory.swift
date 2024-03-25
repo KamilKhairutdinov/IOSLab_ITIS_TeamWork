@@ -18,4 +18,15 @@ class ModuleFactory: ModuleFactoryProtocol {
     func createSignInModule(viewModel: SignInViewModel) -> SignInViewController {
         SignInViewController(viewModel: viewModel)
     }
+
+    // MARK: - Бородач Евгения
+    func createRecomendationsModule(viewModel: RecomendationsViewModel) -> RecomendationsViewController {
+        RecomendationsViewController(viewModel: viewModel)
+    }
+    func createLibraryModule(viewModel: LibraryViewModel) -> LibraryViewController {
+        LibraryViewController(viewModel: viewModel)
+    }
+    func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController {
+        ProfileViewController(viewModel: viewModel)
+    }
 }

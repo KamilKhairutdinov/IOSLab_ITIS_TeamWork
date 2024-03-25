@@ -1,5 +1,5 @@
 {
-  "originHash" : "7d31859143bfbd4f9a0c3fdaf71d238463db97182d201fc8ef29d6853131f29f",
+  "originHash" : "9f3cb45561ae3025dba521e70b94df0a0fff0f6b0b82eb9d045259dce0a110da",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "723fa5a6c65812aec4a0d7cc432ee198883b6e00",
         "version" : "5.9.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage?ysclid=lu6l3joo8m631074000",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage?ysclid=lu6l3joo8m631074000",
+      "state" : {
+        "revision" : "73b9397cfbd902f606572964055464903b1d84c6",
+        "version" : "5.19.0"
       }
     },
     {
