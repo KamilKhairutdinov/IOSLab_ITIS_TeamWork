@@ -31,7 +31,6 @@
 		272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172752BAE0AF800C2990F /* BaseCoordinator.swift */; };
 		272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172772BAE0C0900C2990F /* AppCoordinator.swift */; };
 		2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */; };
-		2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */; };
 		272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */; };
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
 		2733750F2BB1AA5600191795 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733750E2BB1AA5600191795 /* SnapKit */; };
@@ -43,7 +42,31 @@
 		273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 273375222BB1AC1300191795 /* FirebaseAuth */; };
 		273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 273375242BB1AC1300191795 /* FirebaseFirestore */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
-		27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */; };
+		27FE4E6E2BB1B600008C038E /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6A2BB1B600008C038E /* ModuleFactory.swift */; };
+		27FE4E6F2BB1B600008C038E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6B2BB1B600008C038E /* LabelFactory.swift */; };
+		27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6C2BB1B600008C038E /* CoordinatorFactory.swift */; };
+		27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6D2BB1B600008C038E /* ButtonFactory.swift */; };
+		27FE4E812BB1B663008C038E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E7F2BB1B663008C038E /* SignInViewModel.swift */; };
+		27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E802BB1B663008C038E /* SignInViewController.swift */; };
+		27FE4E842BB1B66A008C038E /* SignInFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E832BB1B66A008C038E /* SignInFlowCoordinator.swift */; };
+		27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E852BB1B675008C038E /* TabBarCoordinator.swift */; };
+		27FE4E892BB1B675008C038E /* TabBarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E862BB1B675008C038E /* TabBarDelegateProtocol.swift */; };
+		27FE4E8A2BB1B675008C038E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E872BB1B675008C038E /* TabBarViewController.swift */; };
+		27FE4E932BB1B6C0008C038E /* LibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E922BB1B6C0008C038E /* LibraryCoordinator.swift */; };
+		27FE4E952BB1B6C8008C038E /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */; };
+		27FE4E972BB1B6CD008C038E /* RecomendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */; };
+		27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */; };
+		27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */; };
+		27FE4E9E2BB1B6DD008C038E /* RecomendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */; };
+		27FE4E9F2BB1B6DD008C038E /* RecomendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */; };
+		27FE4EA22BB1B6E6008C038E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA02BB1B6E6008C038E /* ProfileViewController.swift */; };
+		27FE4EA32BB1B6E6008C038E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA12BB1B6E6008C038E /* ProfileViewModel.swift */; };
+		27FE4EA92BB1B79F008C038E /* ServiceFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA42BB1B79F008C038E /* ServiceFactoryProtocol.swift */; };
+		27FE4EAA2BB1B79F008C038E /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA52BB1B79F008C038E /* CoordinatorFactoryProtocol.swift */; };
+		27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */; };
+		27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */; };
+		27FE4EAD2BB1B79F008C038E /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA82BB1B79F008C038E /* ModuleFactoryProtocol.swift */; };
+		27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,11 +96,34 @@
 		272172752BAE0AF800C2990F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		272172772BAE0C0900C2990F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
-		2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 		272172832BAE0F5100C2990F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
-		27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		27FE4E6A2BB1B600008C038E /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		27FE4E6B2BB1B600008C038E /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		27FE4E6C2BB1B600008C038E /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		27FE4E6D2BB1B600008C038E /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		27FE4E7F2BB1B663008C038E /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		27FE4E802BB1B663008C038E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		27FE4E832BB1B66A008C038E /* SignInFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFlowCoordinator.swift; sourceTree = "<group>"; };
+		27FE4E852BB1B675008C038E /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		27FE4E862BB1B675008C038E /* TabBarDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarDelegateProtocol.swift; sourceTree = "<group>"; };
+		27FE4E872BB1B675008C038E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		27FE4E922BB1B6C0008C038E /* LibraryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
+		27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsCoordinator.swift; sourceTree = "<group>"; };
+		27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsViewModel.swift; sourceTree = "<group>"; };
+		27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsViewController.swift; sourceTree = "<group>"; };
+		27FE4EA02BB1B6E6008C038E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27FE4EA12BB1B6E6008C038E /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		27FE4EA42BB1B79F008C038E /* ServiceFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactoryProtocol.swift; sourceTree = "<group>"; };
+		27FE4EA52BB1B79F008C038E /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactoryProtocol.swift; sourceTree = "<group>"; };
+		27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactoryProtocol.swift; sourceTree = "<group>"; };
+		27FE4EA82BB1B79F008C038E /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +166,7 @@
 		0A60B1DB2BB0A06A00CCF145 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */,
 				0A60B1DC2BB0A07B00CCF145 /* Observable.swift */,
 			);
 			path = Helpers;
@@ -163,13 +210,13 @@
 		270789672BAE060B00874D60 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				0A60B1DE2BB0A62000CCF145 /* Services */,
-				0A60B1DB2BB0A06A00CCF145 /* Helpers */,
-				0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */,
 				2707897C2BAE06D000874D60 /* App */,
 				272172622BAE07CD00C2990F /* Router */,
 				272172612BAE07C600C2990F /* Coordinator */,
 				2721727E2BAE0F0500C2990F /* Flows */,
+				0A60B1DE2BB0A62000CCF145 /* Services */,
+				0A60B1DB2BB0A06A00CCF145 /* Helpers */,
+				0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */,
 				272172632BAE089800C2990F /* Factories */,
 				2707897D2BAE06D600874D60 /* Supporting Files */,
 			);
@@ -218,8 +265,10 @@
 			isa = PBXGroup;
 			children = (
 				272172642BAE08A300C2990F /* Protocols */,
-				2721727C2BAE0C7A00C2990F /* CoordinatorFactory.swift */,
-				27A18DFB2BAEE92800FF508F /* ModuleFactory.swift */,
+				27FE4E6D2BB1B600008C038E /* ButtonFactory.swift */,
+				27FE4E6C2BB1B600008C038E /* CoordinatorFactory.swift */,
+				27FE4E6B2BB1B600008C038E /* LabelFactory.swift */,
+				27FE4E6A2BB1B600008C038E /* ModuleFactory.swift */,
 				0A60B1D92BB09BD800CCF145 /* TextFieldFactory.swift */,
 				0A60B1E82BB0AFF800CCF145 /* ServiceFactory.swift */,
 			);
@@ -229,6 +278,11 @@
 		272172642BAE08A300C2990F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */,
+				27FE4EA52BB1B79F008C038E /* CoordinatorFactoryProtocol.swift */,
+				27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */,
+				27FE4EA82BB1B79F008C038E /* ModuleFactoryProtocol.swift */,
+				27FE4EA42BB1B79F008C038E /* ServiceFactoryProtocol.swift */,
 				2721727A2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift */,
 				27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */,
 				0A60B1EA2BB0B02400CCF145 /* ServiceFactoryProtocol.swift */,
@@ -249,6 +303,8 @@
 		2721727E2BAE0F0500C2990F /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				27FE4E7D2BB1B639008C038E /* TabBar */,
+				27FE4E7C2BB1B62B008C038E /* SignIn */,
 				0A60B1CE2BAFA44700CCF145 /* SignUp */,
 				2721727F2BAE0F1100C2990F /* Auth */,
 			);
@@ -268,6 +324,99 @@
 			isa = PBXGroup;
 			children = (
 				272172832BAE0F5100C2990F /* AuthViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		27FE4E7C2BB1B62B008C038E /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E832BB1B66A008C038E /* SignInFlowCoordinator.swift */,
+				27FE4E7E2BB1B64E008C038E /* Screen */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		27FE4E7D2BB1B639008C038E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E8B2BB1B685008C038E /* Tabs */,
+				27FE4E852BB1B675008C038E /* TabBarCoordinator.swift */,
+				27FE4E862BB1B675008C038E /* TabBarDelegateProtocol.swift */,
+				27FE4E872BB1B675008C038E /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		27FE4E7E2BB1B64E008C038E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E802BB1B663008C038E /* SignInViewController.swift */,
+				27FE4E7F2BB1B663008C038E /* SignInViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		27FE4E8B2BB1B685008C038E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E8E2BB1B695008C038E /* Recomendations */,
+				27FE4E8D2BB1B68E008C038E /* Profile */,
+				27FE4E8C2BB1B688008C038E /* Library */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		27FE4E8C2BB1B688008C038E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E922BB1B6C0008C038E /* LibraryCoordinator.swift */,
+				27FE4E912BB1B6B4008C038E /* Screen */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		27FE4E8D2BB1B68E008C038E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */,
+				27FE4E902BB1B6AF008C038E /* Screen */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		27FE4E8E2BB1B695008C038E /* Recomendations */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */,
+				27FE4E8F2BB1B6A5008C038E /* Screen */,
+			);
+			path = Recomendations;
+			sourceTree = "<group>";
+		};
+		27FE4E8F2BB1B6A5008C038E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */,
+				27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		27FE4E902BB1B6AF008C038E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4EA02BB1B6E6008C038E /* ProfileViewController.swift */,
+				27FE4EA12BB1B6E6008C038E /* ProfileViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		27FE4E912BB1B6B4008C038E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */,
+				27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -385,30 +534,53 @@
 			files = (
 				0A60B1E92BB0AFF800CCF145 /* ServiceFactory.swift in Sources */,
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
+				27FE4EA92BB1B79F008C038E /* ServiceFactoryProtocol.swift in Sources */,
+				27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */,
+				27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */,
+				27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
-				2721727D2BAE0C7A00C2990F /* CoordinatorFactory.swift in Sources */,
+				27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */,
+				27FE4EA22BB1B6E6008C038E /* ProfileViewController.swift in Sources */,
 				0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */,
+				27FE4E952BB1B6C8008C038E /* ProfileCoordinator.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
+				27FE4E8A2BB1B675008C038E /* TabBarViewController.swift in Sources */,
 				0A60B1DA2BB09BD800CCF145 /* TextFieldFactory.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
 				0A60B1E12BB0A63D00CCF145 /* SignUpServiceProtocol.swift in Sources */,
-				27A18DFC2BAEE92800FF508F /* ModuleFactory.swift in Sources */,
 				0A60B1EB2BB0B02400CCF145 /* ServiceFactoryProtocol.swift in Sources */,
+				27FE4E6F2BB1B600008C038E /* LabelFactory.swift in Sources */,
+				27FE4EAA2BB1B79F008C038E /* CoordinatorFactoryProtocol.swift in Sources */,
+				27FE4E842BB1B66A008C038E /* SignInFlowCoordinator.swift in Sources */,
+				27FE4E892BB1B675008C038E /* TabBarDelegateProtocol.swift in Sources */,
+				27FE4EAD2BB1B79F008C038E /* ModuleFactoryProtocol.swift in Sources */,
 				0A60B1D02BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift in Sources */,
+				27FE4E932BB1B6C0008C038E /* LibraryCoordinator.swift in Sources */,
+				27FE4E9F2BB1B6DD008C038E /* RecomendationsViewController.swift in Sources */,
 				0A60B1D32BAFAF7700CCF145 /* SignUpController.swift in Sources */,
 				2721727B2BAE0C3C00C2990F /* CoordinatorFactoryProtocol.swift in Sources */,
+				27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */,
+				27FE4EA32BB1B6E6008C038E /* ProfileViewModel.swift in Sources */,
 				0A60B1E72BB0AC1600CCF145 /* ValidationService.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
 				0A60B1E52BB0AAAF00CCF145 /* ValidationServiceProtocol.swift in Sources */,
+				27FE4E6E2BB1B600008C038E /* ModuleFactory.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
+				27FE4E812BB1B663008C038E /* SignInViewModel.swift in Sources */,
+				27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
+				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,
+				27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */,
 				0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,
+				27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
 				0A60B1E32BB0A74F00CCF145 /* SignUpService.swift in Sources */,
+				27FE4E9E2BB1B6DD008C038E /* RecomendationsViewModel.swift in Sources */,
+				27FE4E972BB1B6CD008C038E /* RecomendationsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +799,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 5.7.1;
 			};
 		};
@@ -635,7 +807,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 5.9.0;
 			};
 		};
@@ -643,7 +815,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage?ysclid=lu6y3e3qa7893733021";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 5.19.0;
 			};
 		};
@@ -651,7 +823,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 10.23.0;
 			};
 		};
