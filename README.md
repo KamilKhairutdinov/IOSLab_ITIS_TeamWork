@@ -22,9 +22,3 @@
    - ButtonFactory
    - Дженерик класс Helpers/Observable
    - Дополнил CoordinatorFactory, ModuleFactory, AuthFlowCoordinator
-     
- - Бородач Женя
-   - TabBarFlow: все файлы в этой папке, много писать
-   - Generics: LabelFactoryProtocol, LabelFactory (я не знала че добавить, сделала дженерик color)
-   - Builder pattern: URLBuilder
-   - Добавила библиотеку SDWebImage: RecomendationsViewController, ProfileViewController (марка "Configure ui items")
