@@ -10,6 +10,8 @@ import Foundation
 protocol ModuleFactoryProtocol {
     // MARK: - Хайрутдинов Камил
     func createAuthModule() -> AuthViewController
+    // MARK: - Уваров Тимур
+    func createSignUpModule(viewModel: SignUpViewModel) -> SignUpController
 
     // MARK: - Абрамов Кирилл
     func createSignInModule(viewModel: SignInViewModel) -> SignInViewController

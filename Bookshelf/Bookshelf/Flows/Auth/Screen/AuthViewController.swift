@@ -58,7 +58,6 @@ extension AuthViewController {
         stackView.axis = .vertical
         stackView.spacing = 20
         view.addSubview(stackView)
-
         stackView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
             make.left.right.equalToSuperview().inset(40)

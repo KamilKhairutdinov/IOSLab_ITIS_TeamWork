@@ -8,6 +8,10 @@
 import Foundation
 
 class ModuleFactory: ModuleFactoryProtocol {
+    // MARK: - Уваров Тимур
+    func createSignUpModule(viewModel: SignUpViewModel) -> SignUpController {
+        return SignUpController(viewModel: viewModel)
+    }
 
     // MARK: - Хайрутдинов Камил
     func createAuthModule() -> AuthViewController {
