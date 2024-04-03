@@ -9,7 +9,11 @@ import UIKit
 
 class CoordinatorFactory: CoordinatorFactoryProtocol {
     // MARK: - Уваров Тимур
-    func createSignUpFlowCoordinator(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol, moduleFactory: ModuleFactoryProtocol) -> SignUpFlowCoordinator {
+    func createSignUpFlowCoordinator(
+        router: RouterProtocol,
+        coordinatorFactory: CoordinatorFactoryProtocol,
+        moduleFactory: ModuleFactoryProtocol
+    ) -> SignUpFlowCoordinator {
         return SignUpFlowCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
     }
 

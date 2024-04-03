@@ -64,6 +64,8 @@
 		27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */; };
 		27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */; };
 		27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */; };
+		BAB832172BBD32D500C7C85A /* SignInServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB832162BBD32D500C7C85A /* SignInServiceProtocol.swift */; };
+		BAB832192BBD332B00C7C85A /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB832182BBD332B00C7C85A /* SignInService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,8 @@
 		27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactoryProtocol.swift; sourceTree = "<group>"; };
 		27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactoryProtocol.swift; sourceTree = "<group>"; };
 		27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		BAB832162BBD32D500C7C85A /* SignInServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceProtocol.swift; sourceTree = "<group>"; };
+		BAB832182BBD332B00C7C85A /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 				0A60B1DF2BB0A62A00CCF145 /* Protocols */,
 				0A60B1E22BB0A74F00CCF145 /* SignUpService.swift */,
 				0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */,
+				BAB832182BBD332B00C7C85A /* SignInService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			children = (
 				0A60B1E02BB0A63D00CCF145 /* SignUpServiceProtocol.swift */,
 				0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */,
+				BAB832162BBD32D500C7C85A /* SignInServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -535,6 +541,7 @@
 				0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */,
 				27FE4E952BB1B6C8008C038E /* ProfileCoordinator.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
+				BAB832172BBD32D500C7C85A /* SignInServiceProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
 				27FE4E8A2BB1B675008C038E /* TabBarViewController.swift in Sources */,
 				0A60B1DA2BB09BD800CCF145 /* TextFieldFactory.swift in Sources */,
@@ -561,6 +568,7 @@
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
 				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,
 				27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */,
+				BAB832192BBD332B00C7C85A /* SignInService.swift in Sources */,
 				0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,

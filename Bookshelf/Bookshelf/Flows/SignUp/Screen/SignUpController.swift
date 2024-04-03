@@ -93,7 +93,8 @@ final class SignUpController: UIViewController, FlowController {
 
     private func configureUI() {
 
-        let stackView = UIStackView(arrangedSubviews: [passwordTextField, emailTextField, passwordConfirmationTextField, nextButton, validationErrorsLabel])
+        let stackView = UIStackView(
+            arrangedSubviews: [passwordTextField, emailTextField, passwordConfirmationTextField, nextButton, validationErrorsLabel])
         stackView.axis = .vertical
         stackView.spacing = 20
 
