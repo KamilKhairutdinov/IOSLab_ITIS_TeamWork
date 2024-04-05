@@ -38,17 +38,9 @@ class SignInViewController: UIViewController, FlowController {
         return textField
     }()
 
-    private lazy var validationErrorsLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .red
-        label.font = UIFont.systemFont(ofSize: 14)
-        return label
-    }()
-
     private lazy var signInButton: UIButton = {
-        let action = UIAction { [weak self] _ in
-            guard let self else { return }
-            self.viewModel.signInUser(email: emailTextField.text, password: passwordTextField.text)
+        let action = UIAction {_ in
+            self.completionHandler?()
         }
         let button = buttonFactory.createBorderedButton(title: "Войти", color: .clear, action: action)
         return button
@@ -67,7 +59,6 @@ class SignInViewController: UIViewController, FlowController {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureUI()
-        setupBindings()
     }
 }
 
@@ -85,43 +76,16 @@ extension SignInViewController {
 
         view.addSubview(stackView)
         view.addSubview(signInButton)
-        view.addSubview(validationErrorsLabel)
 
         stackView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
             make.left.right.equalToSuperview().inset(50)
         }
 
-        validationErrorsLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(stackView.snp_bottomMargin).offset(50)
-        }
-
         signInButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.height.equalTo(emailTextField)
             make.bottom.equalToSuperview().inset(50)
-        }
-    }
-}
-
-extension SignInViewController {
-    private func setupBindings() {
-        viewModel.validationError.bind { [weak self] (validationError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = validationError
-        }
-
-        viewModel.isSuccessfullyLoggedIn.bind { [weak self] (isSuccessfullyLoggedIn) in
-            guard let self else { return }
-            if isSuccessfullyLoggedIn {
-                self.completionHandler?()
-            }
-        }
-
-        viewModel.firebaseError.bind { [weak self] (firebaseError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = firebaseError
         }
     }
 }
