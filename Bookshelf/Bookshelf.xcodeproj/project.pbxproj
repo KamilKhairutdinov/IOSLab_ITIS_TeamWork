@@ -396,9 +396,25 @@
 		278309CF2BC3089E0096F9AE /* BookshelfUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				278309D82BC309890096F9AE /* Extensions */,
+				278309D72BC3097D0096F9AE /* MockServices */,
 				278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */,
 			);
 			path = BookshelfUnitTests;
+			sourceTree = "<group>";
+		};
+		278309D72BC3097D0096F9AE /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		278309D82BC309890096F9AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		27FE4E7C2BB1B62B008C038E /* SignIn */ = {
