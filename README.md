@@ -28,3 +28,10 @@
    - Generics: LabelFactoryProtocol, LabelFactory (я не знала че добавить, сделала дженерик color)
    - Builder pattern: URLBuilder
    - Добавила библиотеку SDWebImage: RecomendationsViewController, ProfileViewController (марка "Configure ui items")
+
+ДЗ 2
+- Хайрутдинов Камил
+  - Моковый координатор + unit тесты к нему
+  - ui тесты AuthViewContrller
+  - snapshot тест AuthViewContrller(только один тк иначе не хватит на всех экранов, решили кто что делал на то и пишет тесты)
+  - snapshot тесты не работают из-за конфликта с firebase (почините пожалуйста...)
