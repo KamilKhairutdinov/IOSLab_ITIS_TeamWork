@@ -10,12 +10,12 @@ import FirebaseAuth
 import FirebaseFirestore
 
 // MARK: - Уваров Тимур
-
 class SignUpService: SignUpServiceProtocol {
 
     var currentUser: User? {
         return auth.currentUser
     }
+
     private let auth: Auth
 
     init() {
