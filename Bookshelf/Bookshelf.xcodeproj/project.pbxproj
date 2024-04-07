@@ -636,6 +636,7 @@
 				273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -1190,6 +1191,14 @@
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 10.23.0;
+			};
+		};
+		278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
