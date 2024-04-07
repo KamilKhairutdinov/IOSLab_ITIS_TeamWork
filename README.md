@@ -2,7 +2,7 @@
 - менеджер зависимостей SPM
 - Используем DI для внедрения тестирования!!
 
-ДЗ 1
+# ДЗ 1
  - Хайррутдинов Камил
    - Базовая архитектура: Router, AppCoordinator, AuthFlowCoordinator, BaseCoordinator + протоколы для управления флоу
    - Добавить snapkit
@@ -29,7 +29,7 @@
    - Builder pattern: URLBuilder
    - Добавила библиотеку SDWebImage: RecomendationsViewController, ProfileViewController (марка "Configure ui items")
 
-ДЗ 2
+# ДЗ 2
 - Хайрутдинов Камил
   - Моковый координатор + unit тесты к нему
   - ui тесты AuthViewContrller
