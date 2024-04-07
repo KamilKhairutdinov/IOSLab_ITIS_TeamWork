@@ -25,6 +25,7 @@ class AuthViewController: UIViewController, FlowControllerWithValue {
             self.completionHandler?(.signIn)
         }
         button.addAction(action, for: .touchDown)
+        button.accessibilityIdentifier = "signInButton"
 
         return button
     }()
@@ -38,9 +39,11 @@ class AuthViewController: UIViewController, FlowControllerWithValue {
             self.completionHandler?(.singUp)
         }
         button.addAction(action, for: .touchDown)
+        button.accessibilityIdentifier = "signUpButton"
 
         return button
     }()
+
     // MARK: - Variables
     var completionHandler: ((AuthStates) -> Void)?
 
