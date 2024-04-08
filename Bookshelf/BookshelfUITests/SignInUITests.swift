@@ -7,6 +7,7 @@
 
 import XCTest
 
+// MARK: - Абрамов Кирилл
 final class SignInUITests: XCTestCase {
 
     let app = XCUIApplication()

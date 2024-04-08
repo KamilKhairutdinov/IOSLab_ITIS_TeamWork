@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 // MARK: - Абрамов Кирилл
 class SignInViewController: UIViewController, FlowController {
@@ -14,6 +15,7 @@ class SignInViewController: UIViewController, FlowController {
     private let buttonFactory = ButtonFactory()
     var completionHandler: (() -> Void)?
     private var viewModel: SignInViewModel
+    var cancellables = Set<AnyCancellable>()
 
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
@@ -110,23 +112,33 @@ extension SignInViewController {
 }
 
 extension SignInViewController {
+    // MARK: - Combine
     private func setupBindings() {
-        viewModel.validationError.bind { [weak self] (validationError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = validationError
-        }
-
-        viewModel.isSuccessfullyLoggedIn.bind { [weak self] (isSuccessfullyLoggedIn) in
-            guard let self else { return }
-            if isSuccessfullyLoggedIn {
-                self.completionHandler?()
+        viewModel.$validationError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] validationError in
+                guard let self = self else { return }
+                self.validationErrorsLabel.text = validationError
             }
-        }
+            .store(in: &cancellables)
 
-        viewModel.firebaseError.bind { [weak self] (firebaseError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = firebaseError
-        }
+        viewModel.$isSuccessfullyLoggedIn
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] isSuccessfullyLoggedIn in
+                if isSuccessfullyLoggedIn {
+                    guard let self else { return }
+                    self.completionHandler?()
+                }
+            }
+            .store(in: &cancellables)
+
+        viewModel.$firebaseError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] firebaseError in
+                guard let self = self else { return }
+                self.validationErrorsLabel.text = firebaseError
+            }
+            .store(in: &cancellables)
     }
 }
 
