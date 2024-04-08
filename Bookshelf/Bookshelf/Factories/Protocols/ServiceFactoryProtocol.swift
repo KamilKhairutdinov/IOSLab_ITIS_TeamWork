@@ -9,6 +9,6 @@ import Foundation
 
 // MARK: - Уваров Тимур
 protocol ServiceFactoryProtocol {
-    func createSignUpService() -> SignUpServiceProtocol
+    func createSignUpService() -> AuthServiceProtocol
     func createValidationService() -> ValidationServiceProtocol
 }

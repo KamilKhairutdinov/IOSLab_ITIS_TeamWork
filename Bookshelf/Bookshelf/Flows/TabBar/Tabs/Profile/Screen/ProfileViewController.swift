@@ -9,10 +9,14 @@ import UIKit
 import SnapKit
 import SDWebImage
 
+enum ProfileStatus {
+    case logOut
+}
+
 // MARK: - Бородач Евгения
-class ProfileViewController: UIViewController, FlowController {
+class ProfileViewController: UIViewController, FlowControllerWithValue {
     // MARK: - Declaration objects
-    var completionHandler: (() -> Void)?
+    var completionHandler: ((ProfileStatus) -> Void)?
     private var viewModel: ProfileViewModel
     private let buttonFactory = ButtonFactory()
     private let labelFactory = LabelFactory()
@@ -36,37 +40,22 @@ class ProfileViewController: UIViewController, FlowController {
         super.viewDidLoad()
         configureUIItems()
         configureUI()
+        userIconImage.accessibilityIdentifier = "userIconImage"
     }
 }
 
 // MARK: - Configure ui items
 extension ProfileViewController {
-    /// будет использоваться для получения картинок из сети, пока просто мок пример
-    private func getImage() -> UIImageView {
-        let imageView = UIImageView()
-        let url = getURL()
-        imageView.sd_setImage(with: url, placeholderImage: UIImage(systemName: "scribble.variable"))
-        imageView.layer.cornerRadius = 10
-        imageView.contentMode = .scaleAspectFit
-
-        return imageView
-    }
-
-    /// будет использоваться для получения картинок из сети, пока просто мок пример
-    private func getURL() -> URL {
-        let url = URLBuilder()
-            .with(host: "avatars.mds.yandex.net")
-            .with(path: "/get-mpic/5332815/img_id5910357100315851824.jpeg/600x800")
-            .with(scheme: .https)
-            .build()
-
-        return url
-    }
-
     private func configureUIItems() {
-        nameLabel = labelFactory.createDefaultLabel(text: "Имя Имьевич", fontSize: 25, weight: .bold)
-        userIconImage = getImage()
-        changeProfileLabel = labelFactory.createDefaultLabel(text: "Изменить профиль", color: .lightGray, fontSize: 20)
+        let image = viewModel.getImage()
+        let name = "Имя Имьевич"
+        let change = "Изменить профиль"
+        image.layer.cornerRadius = 10
+        image.contentMode = .scaleAspectFit
+
+        userIconImage = image
+        nameLabel = labelFactory.createDefaultLabel(text: name, fontSize: 25, weight: .bold)
+        changeProfileLabel = labelFactory.createDefaultLabel(text: change, color: .lightGray, fontSize: 20)
     }
 }
 
@@ -82,7 +71,11 @@ extension ProfileViewController {
 // MARK: - Snap kit
 extension ProfileViewController {
     private func configureUI() {
+        let image = UIImage(systemName: "rectangle.portrait.and.arrow.forward")
+        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(buttonTapped))
+
         navigationItem.title = "Профиль"
+        navigationItem.leftBarButtonItem = button
         view.backgroundColor = .white
 
         let mainStackView = UIStackView(arrangedSubviews: [
@@ -104,5 +97,10 @@ extension ProfileViewController {
             make.top.equalToSuperview().inset(100)
             make.centerX.equalToSuperview()
         }
+    }
+
+    @objc private func buttonTapped() {
+        viewModel.logOut()
+        self.completionHandler?(.logOut)
     }
 }

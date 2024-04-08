@@ -29,7 +29,7 @@ class RecomendationsCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension RecomendationsCoordinator {
     private func showRecomendationsController() {
-        let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel())
+        let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(imageNetService: ImageNetworkService()))
         router.setRootController(recomendationsController)
     }
 }

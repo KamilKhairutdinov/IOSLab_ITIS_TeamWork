@@ -60,6 +60,11 @@ extension TabBarCoordinator {
             if navigationController.viewControllers.isEmpty {
                 let routerWithNC = Router(rootController: navigationController)
                 let profileCoordinator = ProfileCoordinator(router: routerWithNC, coordinator: coordinatorFactory, moduleFactory: moduleFactory)
+                profileCoordinator.flowCompletionHandler = { [weak self] in
+                    guard let self else { return }
+                    self.flowCompletionHandler?()
+                    self.removeDependency(profileCoordinator)
+                }
                 self.addDependency(profileCoordinator)
                 profileCoordinator.start()
             }

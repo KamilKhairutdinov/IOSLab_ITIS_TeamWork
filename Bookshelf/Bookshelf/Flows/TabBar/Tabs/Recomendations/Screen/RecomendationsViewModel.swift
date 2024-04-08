@@ -6,7 +6,21 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Бородач Евгения
 class RecomendationsViewModel {
+    private var imageNetService: ImageNetworkServiceProtocol
+
+    init(imageNetService: ImageNetworkServiceProtocol) {
+        self.imageNetService = imageNetService
+    }
+
+    func getImage() -> UIImageView {
+        imageNetService.getImage()
+    }
+
+    func setImageLink() -> URL {
+        imageNetService.getURL()
+    }
 }

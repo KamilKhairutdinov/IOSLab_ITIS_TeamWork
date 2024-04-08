@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - Уваров Тимур
 class ServiceFactory: ServiceFactoryProtocol {
-    func createSignUpService() -> SignUpServiceProtocol {
-        return SignUpService()
+    func createSignUpService() -> AuthServiceProtocol {
+        return AuthService()
     }
 
     func createValidationService() -> ValidationServiceProtocol {
