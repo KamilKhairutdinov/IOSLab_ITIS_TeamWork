@@ -11,11 +11,16 @@ import UIKit
 // MARK: - Бородач Евгения
 class ProfileViewModel {
     // MARK: - Declaration objects
-    private var logOutService = LogOutService()
-    private var imageNetService = ImageNetworkService()
+    private var authService: any AuthServiceProtocol
+    private var imageNetService: ImageNetworkServiceProtocol
+
+    init(authService: any AuthServiceProtocol, imageNetService: ImageNetworkServiceProtocol) {
+        self.authService = authService
+        self.imageNetService = imageNetService
+    }
 
     func logOut() {
-        logOutService.logOut()
+        authService.logOut()
     }
     func getImage() -> UIImageView {
         imageNetService.getImage()

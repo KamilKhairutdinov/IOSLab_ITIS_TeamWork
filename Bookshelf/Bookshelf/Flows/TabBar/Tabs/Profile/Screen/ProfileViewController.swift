@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController, FlowControllerWithValue {
         super.viewDidLoad()
         configureUIItems()
         configureUI()
+        userIconImage.accessibilityIdentifier = "userIconImage"
     }
 }
 

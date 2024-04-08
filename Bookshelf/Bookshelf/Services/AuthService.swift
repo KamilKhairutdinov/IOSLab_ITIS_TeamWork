@@ -8,13 +8,13 @@
 import Foundation
 import FirebaseAuth
 
-class AuthService: AuthServiceProtocol {
+final class AuthService: AuthServiceProtocol {
     var currentUser: User? {
         return auth.currentUser
     }
 
-    private let auth: Auth
     static let shared = AuthService()
+    private let auth: Auth
 
     init() {
         auth = Auth.auth()
@@ -47,6 +47,15 @@ class AuthService: AuthServiceProtocol {
             } else if let error = error {
                 completion(.failure(error))
             }
+        }
+    }
+
+    // MARK: - Бородач Женя
+    func logOut() {
+        do {
+            try auth.signOut()
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
 }

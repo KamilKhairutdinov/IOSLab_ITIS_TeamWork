@@ -39,6 +39,8 @@ class RecomendationsViewController: UIViewController, FlowController {
         super.viewDidLoad()
         configureUIItems()
         configureUI()
+        recomendedBookImage.accessibilityIdentifier = "recomendedBookImage"
+        // viewModel.setImageLink()
     }
 }
 

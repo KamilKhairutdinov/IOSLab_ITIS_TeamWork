@@ -29,7 +29,11 @@ class ProfileCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension ProfileCoordinator {
     private func showProfileController() {
-        let profileController = ProfileViewController(viewModel: ProfileViewModel())
+        let authService = AuthService()
+        let imageNetService = ImageNetworkService()
+        let viewModel = ProfileViewModel(authService: authService, imageNetService: imageNetService)
+        let profileController = ProfileViewController(viewModel: viewModel)
+
         profileController.completionHandler = { [weak self] status in
             switch status {
             case .logOut:
