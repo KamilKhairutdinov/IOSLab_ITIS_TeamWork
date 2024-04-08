@@ -23,6 +23,8 @@
 		2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896A2BAE060B00874D60 /* SceneDelegate.swift */; };
 		270789722BAE061000874D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270789712BAE061000874D60 /* Assets.xcassets */; };
 		270789752BAE061000874D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270789732BAE061000874D60 /* LaunchScreen.storyboard */; };
+		270E99DB2BC3F06200D0A259 /* BookshelfSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */; };
+		270E99DD2BC3F1DA00D0A259 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */; };
 		272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172652BAE08BA00C2990F /* RouterProtocol.swift */; };
 		272172682BAE094300C2990F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172672BAE094300C2990F /* Router.swift */; };
 		2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721726C2BAE09DB00C2990F /* CoordinatorProtocol.swift */; };
@@ -111,6 +113,7 @@
 		270789712BAE061000874D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270789742BAE061000874D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270789762BAE061000874D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfSnapshotTests.swift; sourceTree = "<group>"; };
 		272172652BAE08BA00C2990F /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		272172672BAE094300C2990F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2721726C2BAE09DB00C2990F /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -185,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E99DD2BC3F1DA00D0A259 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +403,7 @@
 				278309D72BC3097D0096F9AE /* MockServices */,
 				27C260FF2BC32BA300F2EB10 /* MockCoordinator */,
 				278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */,
+				270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */,
 			);
 			path = BookshelfUnitTests;
 			sourceTree = "<group>";
@@ -603,6 +608,7 @@
 			);
 			name = BookshelfUnitTests;
 			packageProductDependencies = (
+				270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */,
 			);
 			productName = BookshelfUnitTests;
 			productReference = 278309CE2BC3089E0096F9AE /* BookshelfUnitTests.xctest */;
@@ -786,6 +792,7 @@
 				27C261082BC32E6700F2EB10 /* MockWithValueVIewController.swift in Sources */,
 				27C261052BC32D4900F2EB10 /* MockEmptyViewController.swift in Sources */,
 				27C261012BC32BC800F2EB10 /* MockAppCoordinator.swift in Sources */,
+				270E99DB2BC3F06200D0A259 /* BookshelfSnapshotTests.swift in Sources */,
 				278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */,
 				27C261032BC32C8400F2EB10 /* MockAdditionalCoordinator.swift in Sources */,
 			);
@@ -1156,6 +1163,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
 		2733750E2BB1AA5600191795 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;
