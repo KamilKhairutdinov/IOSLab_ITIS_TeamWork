@@ -33,13 +33,17 @@
 - Хайрутдинов Камил
   - Моковый координатор + unit тесты к нему
   - ui тесты AuthViewContrller
-  - snapshot тест AuthViewContrller(только один тк иначе не хватит на всех экранов, решили кто что делал на то и пишет тесты)
-  - snapshot тесты не работают из-за конфликта с firebase (почините пожалуйста...)
+  - snapshot тест AuthViewContrller & SignInViewController
+  
 - Абрамов Кирилл
   - Юнит тесты ValidationService
   - UI тесты SignInViewController
   - Combine для биндинга SignInViewModel и SignInViewController
-
-
-
-
+  - Snapshot тесты SignUpController & RecomendationsViewController
+   
+- Бородач Женя
+  - ImageNetworkServise для подгрузки картинок
+  - Мок сервисы для тестов: ImageNetworkServiseMock & AuthServiceMock
+  - Юнит тесты RecomendationsViewModel & ProfileViewModel
+  - UI тесты RecomendationsView & ProfileView
+  - Snapshot тесты LibraryViewController & ProfileViewController
