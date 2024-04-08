@@ -23,6 +23,7 @@ class SignInViewController: UIViewController, FlowController {
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .next
         textField.delegate = self
+        textField.accessibilityIdentifier = "emailTextField"
         return textField
     }()
 
@@ -35,6 +36,7 @@ class SignInViewController: UIViewController, FlowController {
         textField.returnKeyType = .done
         textField.delegate = self
         textField.passwordRules = .none
+        textField.accessibilityIdentifier = "passwordTextField"
         return textField
     }()
 
@@ -42,6 +44,7 @@ class SignInViewController: UIViewController, FlowController {
         let label = UILabel()
         label.textColor = .red
         label.font = UIFont.systemFont(ofSize: 14)
+        label.accessibilityIdentifier = "errorsLabel"
         return label
     }()
 
@@ -51,6 +54,7 @@ class SignInViewController: UIViewController, FlowController {
             self.viewModel.signInUser(email: emailTextField.text, password: passwordTextField.text)
         }
         let button = buttonFactory.createBorderedButton(title: "Войти", color: .clear, action: action)
+        button.accessibilityIdentifier = "signIn"
         return button
     }()
 

@@ -12,12 +12,13 @@ class SignInViewModel {
     var validationError: Observable<String>
     var isSuccessfullyLoggedIn: Observable<Bool>
     var firebaseError: Observable<String>
-    private let signInService = SignInService()
+    private let authService: AuthServiceProtocol
 
     init() {
         validationError = Observable("")
         isSuccessfullyLoggedIn = Observable(false)
         firebaseError = Observable("")
+        authService = AuthService.shared
     }
 
     func signInUser(email: String?, password: String?) {
@@ -26,7 +27,7 @@ class SignInViewModel {
         if email.isEmpty || password.isEmpty {
             validationError.value = "Поля не должны быть пустыми"
         } else {
-            signInService.signIn(email: email, password: password) { [weak self] result in
+            authService.signIn(email: email, password: password) { [weak self] result in
                 guard let self else { return }
                 switch result {
                 case .success:
