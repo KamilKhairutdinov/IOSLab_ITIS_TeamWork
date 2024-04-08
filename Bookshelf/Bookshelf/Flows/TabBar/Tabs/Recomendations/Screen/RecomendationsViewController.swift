@@ -44,29 +44,11 @@ class RecomendationsViewController: UIViewController, FlowController {
 
 // MARK: - Configure ui items
 extension RecomendationsViewController {
-    /// будет использоваться для получения картинок из сети, пока просто мок пример
-    private func getImage() -> UIImageView {
-        let imageView = UIImageView()
-        let url = getURL()
-        imageView.sd_setImage(with: url, placeholderImage: UIImage(systemName: "scribble.variable"))
-
-        return imageView
-    }
-
-    /// будет использоваться для получения картинок из сети, пока просто мок пример
-    private func getURL() -> URL {
-        let url = URLBuilder()
-            .with(host: "avatars.mds.yandex.net")
-            .with(path: "/get-mpic/5332815/img_id5910357100315851824.jpeg/600x800")
-            .with(scheme: .https)
-            .build()
-
-        return url
-    }
-
     private func configureUIItems() {
+        let image = viewModel.getImage()
+        recomendedBookImage = image
+
         recomendedLabel = labelFactory.createDefaultLabel(text: "Для Вас", fontSize: 25, weight: .bold)
-        recomendedBookImage = getImage()
         recomendedBookNameLabel = labelFactory.createDefaultLabel(text: "Книга")
         recomendedBookDescrLabael = labelFactory.createDefaultLabel(text: "Крутая", color: .lightGray, fontSize: 17)
         categoriesLabel = labelFactory.createDefaultLabel(text: "Категории", fontSize: 25, weight: .bold)

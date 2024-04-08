@@ -42,7 +42,8 @@ class AppCoordinator: BaseCoordinator {
         addDependency(tabBarCoordinator)
         tabBarCoordinator.flowCompletionHandler = { [weak self] in
             guard let self else { return }
-            self.removeDependency(tabBarCoordinator)
+            removeDependency(tabBarCoordinator)
+            runAuthFlow()
         }
         router.setRootController(tabBarVC, isNavigationBarHidden: true)
         tabBarCoordinator.start()

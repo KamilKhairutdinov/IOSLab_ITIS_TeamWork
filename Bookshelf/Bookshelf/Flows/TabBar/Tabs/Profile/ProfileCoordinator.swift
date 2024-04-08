@@ -30,6 +30,12 @@ class ProfileCoordinator: BaseCoordinator {
 extension ProfileCoordinator {
     private func showProfileController() {
         let profileController = ProfileViewController(viewModel: ProfileViewModel())
+        profileController.completionHandler = { [weak self] status in
+            switch status {
+            case .logOut:
+                self?.flowCompletionHandler?()
+            }
+        }
         router.setRootController(profileController)
     }
 }
