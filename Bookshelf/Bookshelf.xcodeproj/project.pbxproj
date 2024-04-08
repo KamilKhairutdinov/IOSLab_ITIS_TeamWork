@@ -27,6 +27,8 @@
 		2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707896A2BAE060B00874D60 /* SceneDelegate.swift */; };
 		270789722BAE061000874D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270789712BAE061000874D60 /* Assets.xcassets */; };
 		270789752BAE061000874D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270789732BAE061000874D60 /* LaunchScreen.storyboard */; };
+		270E99DB2BC3F06200D0A259 /* BookshelfSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */; };
+		270E99DD2BC3F1DA00D0A259 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */; };
 		272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172652BAE08BA00C2990F /* RouterProtocol.swift */; };
 		272172682BAE094300C2990F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172672BAE094300C2990F /* Router.swift */; };
 		2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721726C2BAE09DB00C2990F /* CoordinatorProtocol.swift */; };
@@ -75,6 +77,10 @@
 		27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */; };
 		27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */; };
 		27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */; };
+		BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */; };
+		BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */; };
+		BA3D1E822BC3DF090079FCB9 /* SignInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E812BC3DF090079FCB9 /* SignInUITests.swift */; };
+		BA3D1E862BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */; };
 		BA7D58FE2BC0600700CE3EDB /* SignInServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D58FD2BC0600700CE3EDB /* SignInServiceProtocol.swift */; };
 		BA7D59002BC0601900CE3EDB /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D58FF2BC0601900CE3EDB /* SignInService.swift */; };
 /* End PBXBuildFile section */
@@ -119,6 +125,7 @@
 		270789712BAE061000874D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270789742BAE061000874D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270789762BAE061000874D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfSnapshotTests.swift; sourceTree = "<group>"; };
 		272172652BAE08BA00C2990F /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		272172672BAE094300C2990F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2721726C2BAE09DB00C2990F /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -162,6 +169,10 @@
 		27FE4EA62BB1B79F008C038E /* LabelFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactoryProtocol.swift; sourceTree = "<group>"; };
 		27FE4EA72BB1B79F008C038E /* ButtonFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactoryProtocol.swift; sourceTree = "<group>"; };
 		27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BA3D1E812BC3DF090079FCB9 /* SignInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUITests.swift; sourceTree = "<group>"; };
+		BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceUnitTest.swift; sourceTree = "<group>"; };
 		BA7D58FD2BC0600700CE3EDB /* SignInServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceProtocol.swift; sourceTree = "<group>"; };
 		BA7D58FF2BC0601900CE3EDB /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E99DD2BC3F1DA00D0A259 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +247,7 @@
 				BA7D58FF2BC0601900CE3EDB /* SignInService.swift */,
 				04C997B32BC3E09B00087BEC /* LogOutService.swift */,
 				04C997B72BC3F76400087BEC /* ImageNetworkService.swift */,
+				BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -247,6 +260,7 @@
 				BA7D58FD2BC0600700CE3EDB /* SignInServiceProtocol.swift */,
 				04C997B12BC3E02100087BEC /* LogOutServiceProtocol.swift */,
 				04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */,
+				BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -400,6 +414,7 @@
 			children = (
 				278309C12BC308650096F9AE /* BookshelfUITests.swift */,
 				278309C32BC308650096F9AE /* BookshelfUITestsLaunchTests.swift */,
+				BA3D1E812BC3DF090079FCB9 /* SignInUITests.swift */,
 			);
 			path = BookshelfUITests;
 			sourceTree = "<group>";
@@ -409,6 +424,8 @@
 			children = (
 				27C260FF2BC32BA300F2EB10 /* MockCoordinator */,
 				278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */,
+				270E99DA2BC3F06200D0A259 /* BookshelfSnapshotTests.swift */,
+				BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */,
 			);
 			path = BookshelfUnitTests;
 			sourceTree = "<group>";
@@ -599,6 +616,7 @@
 			);
 			name = BookshelfUnitTests;
 			packageProductDependencies = (
+				270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */,
 			);
 			productName = BookshelfUnitTests;
 			productReference = 278309CE2BC3089E0096F9AE /* BookshelfUnitTests.xctest */;
@@ -722,6 +740,7 @@
 				27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
+				BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */,
 				27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */,
 				27FE4EA22BB1B6E6008C038E /* ProfileViewController.swift in Sources */,
 				0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */,
@@ -762,6 +781,7 @@
 				0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,
 				272172662BAE08BB00C2990F /* RouterProtocol.swift in Sources */,
+				BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */,
 				27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
 				0A60B1E32BB0A74F00CCF145 /* SignUpService.swift in Sources */,
@@ -774,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3D1E822BC3DF090079FCB9 /* SignInUITests.swift in Sources */,
 				278309C42BC308650096F9AE /* BookshelfUITestsLaunchTests.swift in Sources */,
 				278309C22BC308650096F9AE /* BookshelfUITests.swift in Sources */,
 			);
@@ -785,7 +806,9 @@
 			files = (
 				27C261082BC32E6700F2EB10 /* MockWithValueVIewController.swift in Sources */,
 				27C261052BC32D4900F2EB10 /* MockEmptyViewController.swift in Sources */,
+				BA3D1E862BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift in Sources */,
 				27C261012BC32BC800F2EB10 /* MockAppCoordinator.swift in Sources */,
+				270E99DB2BC3F06200D0A259 /* BookshelfSnapshotTests.swift in Sources */,
 				278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */,
 				27C261032BC32C8400F2EB10 /* MockAdditionalCoordinator.swift in Sources */,
 			);
@@ -1156,6 +1179,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		270E99DC2BC3F1DA00D0A259 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
 		2733750E2BB1AA5600191795 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;

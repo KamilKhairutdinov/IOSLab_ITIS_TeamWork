@@ -9,30 +9,31 @@ import Foundation
 
 // MARK: - Абрамов Кирилл
 class SignInViewModel {
-    var validationError: Observable<String>
-    var isSuccessfullyLoggedIn: Observable<Bool>
-    var firebaseError: Observable<String>
-    private let signInService = SignInService()
+    @Published var validationError: String
+    @Published var isSuccessfullyLoggedIn: Bool
+    @Published var firebaseError: String
+    private let authService: AuthServiceProtocol
 
     init() {
-        validationError = Observable("")
-        isSuccessfullyLoggedIn = Observable(false)
-        firebaseError = Observable("")
+        validationError = ""
+        isSuccessfullyLoggedIn = false
+        firebaseError = ""
+        authService = AuthService.shared
     }
 
     func signInUser(email: String?, password: String?) {
         guard let email, let password else { return }
-        validationError.value = ""
+        validationError = ""
         if email.isEmpty || password.isEmpty {
-            validationError.value = "Поля не должны быть пустыми"
+            validationError = "Поля не должны быть пустыми"
         } else {
-            signInService.signIn(email: email, password: password) { [weak self] result in
+            authService.signIn(email: email, password: password) { [weak self] result in
                 guard let self else { return }
                 switch result {
                 case .success:
-                    self.isSuccessfullyLoggedIn.value = true
+                    isSuccessfullyLoggedIn = true
                 case .failure(let error):
-                    firebaseError.value = error.localizedDescription
+                    firebaseError = error.localizedDescription
                 }
             }
         }

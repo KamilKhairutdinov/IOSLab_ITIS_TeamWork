@@ -15,16 +15,14 @@ class SignUpViewModel {
     var errorStringFormatted: Observable<String>
     private var email: String
     private var password: String
-    private var serviceFactory: ServiceFactoryProtocol
-    private var signUpService: SignUpServiceProtocol
+    private let authService: AuthServiceProtocol
     private var validationService: ValidationServiceProtocol
 
     init() {
         isSuccessfulRegistered = Observable(false)
         errorStringFormatted = Observable("")
-        serviceFactory = ServiceFactory()
-        validationService = serviceFactory.createValidationService()
-        signUpService = serviceFactory.createSignUpService()
+        validationService = ValidationService()
+        authService = AuthService.shared
         password = ""
         email = ""
     }
@@ -38,7 +36,7 @@ class SignUpViewModel {
         let errors = validationService.validateUser(email, password, passwordConfirmation)
 
         if errors.isEmpty {
-            signUpService.signUp(email: email, password: password) { [weak self] result in
+            authService.signUp(email: email, password: password) { [weak self] result in
                 guard let self else { return }
                 switch result {
                 case .success:
