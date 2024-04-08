@@ -12,6 +12,7 @@ import SnapshotTesting
 
 final class BookshelfSnapshotTests: XCTestCase {
 
+    // MARK: - Хайрутдинов Камил
     func testExample() throws {
         let viewController = AuthViewController()
         assertSnapshot(of: viewController, as: .image)
