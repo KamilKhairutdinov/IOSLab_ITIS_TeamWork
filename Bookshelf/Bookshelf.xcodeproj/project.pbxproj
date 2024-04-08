@@ -74,6 +74,7 @@
 		BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */; };
 		BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */; };
 		BA3D1E822BC3DF090079FCB9 /* SignInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E812BC3DF090079FCB9 /* SignInUITests.swift */; };
+		BA3D1E862BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */; };
 		BA7D58FE2BC0600700CE3EDB /* SignInServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D58FD2BC0600700CE3EDB /* SignInServiceProtocol.swift */; };
 		BA7D59002BC0601900CE3EDB /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D58FF2BC0601900CE3EDB /* SignInService.swift */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,7 @@
 		BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		BA3D1E812BC3DF090079FCB9 /* SignInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUITests.swift; sourceTree = "<group>"; };
+		BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceUnitTest.swift; sourceTree = "<group>"; };
 		BA7D58FD2BC0600700CE3EDB /* SignInServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceProtocol.swift; sourceTree = "<group>"; };
 		BA7D58FF2BC0601900CE3EDB /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -408,6 +410,7 @@
 				278309D72BC3097D0096F9AE /* MockServices */,
 				27C260FF2BC32BA300F2EB10 /* MockCoordinator */,
 				278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */,
+				BA3D1E852BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift */,
 			);
 			path = BookshelfUnitTests;
 			sourceTree = "<group>";
@@ -797,6 +800,7 @@
 			files = (
 				27C261082BC32E6700F2EB10 /* MockWithValueVIewController.swift in Sources */,
 				27C261052BC32D4900F2EB10 /* MockEmptyViewController.swift in Sources */,
+				BA3D1E862BC3F52C0079FCB9 /* ValidationServiceUnitTest.swift in Sources */,
 				27C261012BC32BC800F2EB10 /* MockAppCoordinator.swift in Sources */,
 				278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */,
 				27C261032BC32C8400F2EB10 /* MockAdditionalCoordinator.swift in Sources */,

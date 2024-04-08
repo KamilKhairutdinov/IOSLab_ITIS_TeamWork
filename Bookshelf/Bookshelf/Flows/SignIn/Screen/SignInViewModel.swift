@@ -31,7 +31,7 @@ class SignInViewModel {
                 guard let self else { return }
                 switch result {
                 case .success:
-                    self.isSuccessfullyLoggedIn.value = true
+                    isSuccessfullyLoggedIn.value = true
                 case .failure(let error):
                     firebaseError.value = error.localizedDescription
                 }
