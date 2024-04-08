@@ -48,8 +48,6 @@
 		27C261032BC32C8400F2EB10 /* MockAdditionalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C261022BC32C8400F2EB10 /* MockAdditionalCoordinator.swift */; };
 		27C261052BC32D4900F2EB10 /* MockEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C261042BC32D4900F2EB10 /* MockEmptyViewController.swift */; };
 		27C261082BC32E6700F2EB10 /* MockWithValueVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C261072BC32E6700F2EB10 /* MockWithValueVIewController.swift */; };
-		27C2610B2BC33D2900F2EB10 /* SnapshotTestsBookShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2610A2BC33D2900F2EB10 /* SnapshotTestsBookShelf.swift */; };
-		27C261102BC33FD600F2EB10 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 27C2610F2BC33FD600F2EB10 /* SnapshotTesting */; };
 		27FE4E6E2BB1B600008C038E /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6A2BB1B600008C038E /* ModuleFactory.swift */; };
 		27FE4E6F2BB1B600008C038E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6B2BB1B600008C038E /* LabelFactory.swift */; };
 		27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E6C2BB1B600008C038E /* CoordinatorFactory.swift */; };
@@ -122,6 +120,7 @@
 		272172772BAE0C0900C2990F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 		272172832BAE0F5100C2990F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		2765695D2BC3D92D00B0323E /* Bookshelf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Bookshelf.xcodeproj; sourceTree = "<group>"; };
 		278309BF2BC308650096F9AE /* BookshelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278309C12BC308650096F9AE /* BookshelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfUITests.swift; sourceTree = "<group>"; };
 		278309C32BC308650096F9AE /* BookshelfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -132,7 +131,6 @@
 		27C261022BC32C8400F2EB10 /* MockAdditionalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdditionalCoordinator.swift; sourceTree = "<group>"; };
 		27C261042BC32D4900F2EB10 /* MockEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmptyViewController.swift; sourceTree = "<group>"; };
 		27C261072BC32E6700F2EB10 /* MockWithValueVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWithValueVIewController.swift; sourceTree = "<group>"; };
-		27C2610A2BC33D2900F2EB10 /* SnapshotTestsBookShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestsBookShelf.swift; sourceTree = "<group>"; };
 		27FE4E6A2BB1B600008C038E /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		27FE4E6B2BB1B600008C038E /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		27FE4E6C2BB1B600008C038E /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C261102BC33FD600F2EB10 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,12 +378,16 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		2765695E2BC3D92D00B0323E /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		278309C02BC308650096F9AE /* BookshelfUITests */ = {
 			isa = PBXGroup;
 			children = (
 				278309C12BC308650096F9AE /* BookshelfUITests.swift */,
 				278309C32BC308650096F9AE /* BookshelfUITestsLaunchTests.swift */,
-				27C2610A2BC33D2900F2EB10 /* SnapshotTestsBookShelf.swift */,
 			);
 			path = BookshelfUITests;
 			sourceTree = "<group>";
@@ -438,6 +439,7 @@
 		27C2610C2BC33EF200F2EB10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2765695D2BC3D92D00B0323E /* Bookshelf.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -581,7 +583,6 @@
 			);
 			name = BookshelfUITests;
 			packageProductDependencies = (
-				27C2610F2BC33FD600F2EB10 /* SnapshotTesting */,
 			);
 			productName = BookshelfUITests;
 			productReference = 278309BF2BC308650096F9AE /* BookshelfUITests.xctest */;
@@ -601,6 +602,8 @@
 				278309D32BC3089E0096F9AE /* PBXTargetDependency */,
 			);
 			name = BookshelfUnitTests;
+			packageProductDependencies = (
+			);
 			productName = BookshelfUnitTests;
 			productReference = 278309CE2BC3089E0096F9AE /* BookshelfUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -646,6 +649,12 @@
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2765695E2BC3D92D00B0323E /* Products */;
+					ProjectRef = 2765695D2BC3D92D00B0323E /* Bookshelf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				270789642BAE060B00874D60 /* Bookshelf */,
@@ -766,7 +775,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				278309C42BC308650096F9AE /* BookshelfUITestsLaunchTests.swift in Sources */,
-				27C2610B2BC33D2900F2EB10 /* SnapshotTestsBookShelf.swift in Sources */,
 				278309C22BC308650096F9AE /* BookshelfUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1187,11 +1195,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		27C2610F2BC33FD600F2EB10 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
