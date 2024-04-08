@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 // MARK: - Абрамов Кирилл
 class SignInViewController: UIViewController, FlowController {
@@ -14,6 +15,7 @@ class SignInViewController: UIViewController, FlowController {
     private let buttonFactory = ButtonFactory()
     var completionHandler: (() -> Void)?
     private var viewModel: SignInViewModel
+    var cancellables = Set<AnyCancellable>()
 
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
@@ -23,6 +25,7 @@ class SignInViewController: UIViewController, FlowController {
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .next
         textField.delegate = self
+        textField.accessibilityIdentifier = "emailTextField"
         return textField
     }()
 
@@ -35,6 +38,7 @@ class SignInViewController: UIViewController, FlowController {
         textField.returnKeyType = .done
         textField.delegate = self
         textField.passwordRules = .none
+        textField.accessibilityIdentifier = "passwordTextField"
         return textField
     }()
 
@@ -42,6 +46,7 @@ class SignInViewController: UIViewController, FlowController {
         let label = UILabel()
         label.textColor = .red
         label.font = UIFont.systemFont(ofSize: 14)
+        label.accessibilityIdentifier = "errorsLabel"
         return label
     }()
 
@@ -51,6 +56,7 @@ class SignInViewController: UIViewController, FlowController {
             self.viewModel.signInUser(email: emailTextField.text, password: passwordTextField.text)
         }
         let button = buttonFactory.createBorderedButton(title: "Войти", color: .clear, action: action)
+        button.accessibilityIdentifier = "signIn"
         return button
     }()
 
@@ -106,23 +112,33 @@ extension SignInViewController {
 }
 
 extension SignInViewController {
+    // MARK: - Combine
     private func setupBindings() {
-        viewModel.validationError.bind { [weak self] (validationError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = validationError
-        }
-
-        viewModel.isSuccessfullyLoggedIn.bind { [weak self] (isSuccessfullyLoggedIn) in
-            guard let self else { return }
-            if isSuccessfullyLoggedIn {
-                self.completionHandler?()
+        viewModel.$validationError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] validationError in
+                guard let self = self else { return }
+                self.validationErrorsLabel.text = validationError
             }
-        }
+            .store(in: &cancellables)
 
-        viewModel.firebaseError.bind { [weak self] (firebaseError) in
-            guard let self else { return }
-            self.validationErrorsLabel.text = firebaseError
-        }
+        viewModel.$isSuccessfullyLoggedIn
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] isSuccessfullyLoggedIn in
+                if isSuccessfullyLoggedIn {
+                    guard let self else { return }
+                    self.completionHandler?()
+                }
+            }
+            .store(in: &cancellables)
+
+        viewModel.$firebaseError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] firebaseError in
+                guard let self = self else { return }
+                self.validationErrorsLabel.text = firebaseError
+            }
+            .store(in: &cancellables)
     }
 }
 
