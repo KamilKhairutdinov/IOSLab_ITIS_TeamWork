@@ -13,10 +13,20 @@ class AuthServiceMock: AuthServiceProtocol {
 
     var currentUser = UserData()
 
-    func signIn(email: String, password: String, completion: @escaping (Result<User, any Error>) -> Void) {
+    func getCurrentUser() -> UserData {
+        currentUser
     }
 
-    func signUp(email: String, password: String, completion: @escaping (Result<User, any Error>) -> Void) {
+    func signIn(email: String, password: String, completion: @escaping (Result<User, any Error>) -> Void) {
+        completion(.failure(NSError(domain: "ashibka", code: 404)))
+    }
+
+    func signUp(
+        email: String,
+        password: String,
+        completion: @escaping (Result<User, Error>) -> Void
+    ) {
+        completion(.failure(NSError(domain: "ashibka", code: 404)))
     }
 
     func logOut() {

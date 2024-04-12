@@ -49,44 +49,71 @@ final class BookshelfUITests: XCTestCase {
         XCTAssert(app.buttons["signUpButton"].exists)
     }
 
-    // MARK: - RecomendationsView: Бородач Женя
-    func test_recomendations_view_exist_image() throws {
-        app.buttons["signInButton"].tap()
+    // MARK: - SignUpView: Увар Тимуров
+    func testSignUpScreenExistsElements() throws {
+        app.buttons["signUpButton"].tap()
 
-        app.textFields["emailTextField"].tap()
-        app.textFields["emailTextField"].typeText("Evaklqq@mail.ru")
-
-        app.secureTextFields["passwordTextField"].tap()
-        app.secureTextFields["passwordTextField"].typeText("evaklqq")
-
-        sleep(2)
-
-        app.buttons["done"].tap()
-        app.buttons["signIn"].tap()
-
-        sleep(2)
-
-        XCTAssert(app.images["recomendedBookImage"].exists)
+        XCTAssertTrue(app.textFields["emailSignUpTextField"].exists)
+        XCTAssertTrue(app.secureTextFields["passwordSignUpTextField"].exists)
+        XCTAssertTrue(app.secureTextFields["passwordConfirmationSignUpTextField"].exists)
+        XCTAssertTrue(app.buttons["signUp"].exists)
     }
 
-    // MARK: - ProfileView: Бородач Женя
-    func test_profile_view_exist_image() throws {
-        app.buttons["signInButton"].tap()
+    func testSignUpScreenErrorLabelExists() throws {
+        app.buttons["signUpButton"].tap()
 
-        app.textFields["emailTextField"].tap()
-        app.textFields["emailTextField"].typeText("Evaklqq@mail.ru")
+        app.textFields["emailSignUpTextField"].tap()
+        app.textFields["emailSignUpTextField"].typeText("\n")
 
-        app.secureTextFields["passwordTextField"].tap()
-        app.secureTextFields["passwordTextField"].typeText("evaklqq")
+        app.secureTextFields["passwordSignUpTextField"].tap()
+        app.secureTextFields["passwordSignUpTextField"].typeText("\n")
 
-        sleep(2)
+        app.secureTextFields["passwordConfirmationSignUpTextField"].tap()
+        app.secureTextFields["passwordConfirmationSignUpTextField"].typeText("\n")
 
-        app.buttons["done"].tap()
-        app.buttons["signIn"].tap()
+        app.buttons["signUp"].tap()
 
-        sleep(2)
+        XCTAssertTrue(app.staticTexts["errorsLabel"].exists)
 
-        XCUIApplication().tabBars["Tab Bar"].buttons["person"].tap()
-        XCTAssert(app.images["userIconImage"].exists)
+        // MARK: - RecomendationsView: Бородач Женя
+        func test_recomendations_view_exist_image() throws {
+            app.buttons["signInButton"].tap()
+
+            app.textFields["emailTextField"].tap()
+            app.textFields["emailTextField"].typeText("Evaklqq@mail.ru")
+
+            app.secureTextFields["passwordTextField"].tap()
+            app.secureTextFields["passwordTextField"].typeText("evaklqq")
+
+            sleep(2)
+
+            app.buttons["done"].tap()
+            app.buttons["signIn"].tap()
+
+            sleep(2)
+
+            XCTAssert(app.images["recomendedBookImage"].exists)
+        }
+
+        // MARK: - ProfileView: Бородач Женя
+        func test_profile_view_exist_image() throws {
+            app.buttons["signInButton"].tap()
+
+            app.textFields["emailTextField"].tap()
+            app.textFields["emailTextField"].typeText("Evaklqq@mail.ru")
+
+            app.secureTextFields["passwordTextField"].tap()
+            app.secureTextFields["passwordTextField"].typeText("evaklqq")
+
+            sleep(2)
+
+            app.buttons["done"].tap()
+            app.buttons["signIn"].tap()
+
+            sleep(2)
+
+            XCUIApplication().tabBars["Tab Bar"].buttons["person"].tap()
+            XCTAssert(app.images["userIconImage"].exists)
+        }
     }
 }
