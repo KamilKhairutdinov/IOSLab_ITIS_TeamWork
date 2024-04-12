@@ -41,6 +41,7 @@
   - UI тесты SignInViewController
   - Combine для биндинга SignInViewModel и SignInViewController
   - Snapshot тесты SignUpController & RecomendationsViewController
+  - 
    
 - Бородач Женя
   - ImageNetworkServise для подгрузки картинок
@@ -48,3 +49,10 @@
   - Юнит тесты RecomendationsViewModel & ProfileViewModel
   - UI тесты RecomendationsView & ProfileView
   - Snapshot тесты LibraryViewController & ProfileViewController
+
+- Уваров Тимур
+  - Юнит тесты AuthService
+  - MockAuthService (дописал много чего)
+  - UI тесты SignUpController
+  - Рефактор SignUpController
+  - Snapshot тесты SignUpController & TabBarViewController
