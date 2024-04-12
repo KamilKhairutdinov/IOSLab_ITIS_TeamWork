@@ -8,6 +8,7 @@
 import XCTest
 @testable import class Bookshelf.Router
 @testable import class Bookshelf.ValidationService
+@testable import class Bookshelf.AuthService
 @testable import class Bookshelf.RecomendationsViewModel
 @testable import class Bookshelf.ProfileViewModel
 @testable import protocol Bookshelf.ImageNetworkServiceProtocol
@@ -96,6 +97,64 @@ extension BookshelfUnitTests {
         XCTAssertEqual(errors, ["Пароли не совпадают"])
     }
 }
+
+// MARK: - AuthService: Уваров Тимур
+extension BookshelfUnitTests {
+    func test_current_user_not_nil() {
+        // GIVEN
+        let authService = AuthServiceMock()
+
+        // WHEN
+        let user = authService.getCurrentUser()
+
+        // THEN
+        XCTAssertNotNil(user)
+    }
+    func test_error_signup_with_email_and_password() {
+        // GIVEN
+        let authService = AuthServiceMock()
+        let email = "test@test.ru"
+        let password = "test123"
+
+        var errors = ""
+
+        // WHEN
+
+        authService.signUp(email: email, password: password) { result in
+            switch result {
+            case .success:
+                errors = ""
+            case .failure(let error):
+                errors = error.localizedDescription
+            }
+        }
+
+        // THEN
+        XCTAssertNotEqual(errors, "")
+    }
+
+    func test_error_login_with_email_and_password() {
+        // GIVEN
+        let authService = AuthServiceMock()
+        let email = "test@test.ru"
+        let password = "test123"
+
+        var errors = ""
+
+        // WHEN
+        authService.signIn(email: email, password: password) { result in
+            switch result {
+            case .success:
+                errors = ""
+            case .failure(let error):
+                errors = error.localizedDescription
+            }
+        }
+
+        // THEN
+        XCTAssertNotEqual(errors, "")
+        }
+    }
 
 // MARK: - Image Network Service: Бородач Женя
 extension BookshelfUnitTests {

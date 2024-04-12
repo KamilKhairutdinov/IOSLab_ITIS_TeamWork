@@ -17,6 +17,7 @@ final class SignUpController: UIViewController, FlowController {
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .next
         textField.delegate = self
+        textField.accessibilityIdentifier = "emailSignUpTextField"
 
         return textField
     }()
@@ -27,6 +28,7 @@ final class SignUpController: UIViewController, FlowController {
         textField.returnKeyType = .next
         textField.delegate = self
         textField.passwordRules = .none
+        textField.accessibilityIdentifier = "passwordSignUpTextField"
 
         return textField
     }()
@@ -37,6 +39,7 @@ final class SignUpController: UIViewController, FlowController {
         textField.returnKeyType = .done
         textField.delegate = self
         textField.passwordRules = .none
+        textField.accessibilityIdentifier = "passwordConfirmationSignUpTextField"
 
         return textField
     }()
@@ -64,7 +67,7 @@ final class SignUpController: UIViewController, FlowController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.backgroundColor = .systemBlue
         button.addAction(action, for: .touchUpInside)
-
+        button.accessibilityIdentifier = "signUp"
         return button
     }()
 

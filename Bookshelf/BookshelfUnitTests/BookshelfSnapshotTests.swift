@@ -38,6 +38,18 @@ final class BookshelfSnapshotTests: XCTestCase {
         assertSnapshot(of: viewController, as: .image)
     }
 
+    // MARK: - Уваров Тимур
+    func test_sign_up_viewcontroller() throws {
+        let viewModel = SignUpViewModel()
+        let viewController = SignUpController(viewModel: viewModel)
+        assertSnapshot(of: viewController, as: .image)
+    }
+
+    func test_tab_bar_view_controller() throws {
+        let viewController = TabBarViewController()
+        assertSnapshot(of: viewController, as: .image)
+    }
+
     // MARK: - Бородач Женя
     func test_library_view_controller() throws {
         let imageService = LibraryViewModel()
