@@ -8,11 +8,23 @@
 import UIKit
 import SDWebImage
 import SnapKit
+import SwiftUI
 
 // MARK: - Бородач Евгения
-class RecomendationsViewController: UIViewController, FlowControllerWithValue {
-    var completionHandler: ((BookFromApi) -> Void)?
-    typealias OutValue = BookFromApi
+
+
+// MARK: - Уваров Тимур
+
+class Genre: ObservableObject {
+    @Published var genre: String
+
+    init(genre: String) {
+        self.genre = genre
+    }
+}
+class RecomendationsViewController: UIViewController, FlowController {
+
+    var genre = Genre(genre: "biznes")
 
     // MARK: - Declaration objects
     private var viewModel: RecomendationsViewModel
@@ -24,8 +36,9 @@ class RecomendationsViewController: UIViewController, FlowControllerWithValue {
     private lazy var recomendedBookNameLabel = UILabel()
     private lazy var recomendedBookDescrLabael = UILabel()
     private lazy var categoriesLabel = UILabel()
-    private lazy var businessCategoryLabel = UILabel()
-    private lazy var cultureCategoryLabel = UILabel()
+    private lazy var businessCategoryLabel = UIButton()
+    private lazy var cultureCategoryLabel = UIButton()
+    private lazy var recomendationsSwiftUIView = UIHostingController(rootView: RecomendationsSwiftUIView(genre: genre, viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared)))
 
     // MARK: - Init
     init(viewModel: RecomendationsViewModel) {
@@ -39,35 +52,36 @@ class RecomendationsViewController: UIViewController, FlowControllerWithValue {
     // MARK: - Load view
     override func viewDidLoad() {
         super.viewDidLoad()
+        addChild(recomendationsSwiftUIView)
+        view.addSubview(recomendationsSwiftUIView.view)
         configureUIItems()
         configureUI()
         recomendedBookImage.accessibilityIdentifier = "recomendedBookImage"
         // viewModel.setImageLink()
     }
 }
-
-// MARK: - Configure ui items
+// MARK: - Уваров Тимур
 extension RecomendationsViewController {
     private func configureUIItems() {
-        let image = viewModel.getImage()
-        recomendedBookImage = image
+//        let image = viewModel.getImage()
+//        recomendedBookImage = image
 
         recomendedLabel = labelFactory.createDefaultLabel(text: "Для Вас", fontSize: 25, weight: .bold)
         recomendedBookNameLabel = labelFactory.createDefaultLabel(text: "Книга")
         recomendedBookDescrLabael = labelFactory.createDefaultLabel(text: "Крутая", color: .lightGray, fontSize: 17)
         categoriesLabel = labelFactory.createDefaultLabel(text: "Категории", fontSize: 25, weight: .bold)
-        businessCategoryLabel = labelFactory.createDefaultLabel(text: "Бизнес", color: .blue, weight: .bold)
-        cultureCategoryLabel = labelFactory.createDefaultLabel(text: "Культура", color: .blue, weight: .bold)
-
-        let detailBookGesture = UITapGestureRecognizer(target: self, action: #selector(bookLabelTapped))
-        recomendedBookNameLabel.isUserInteractionEnabled = true
-        recomendedBookDescrLabael.isUserInteractionEnabled = true
-        recomendedBookNameLabel.addGestureRecognizer(detailBookGesture)
-        recomendedBookDescrLabael.addGestureRecognizer(detailBookGesture)
-    }
-
-    @objc func bookLabelTapped() {
-        completionHandler?(BookFromApi(id: 0, title: "Книга", authors: [Author(name: "Очень хороший автор", birthYear: 0, deathYear: 0)], translators: [], subjects: [], bookshelves: [], languages: [], copyright: false, mediaType: "false", formats: nil, downloadCount: 100))
+        businessCategoryLabel = UIButton(configuration: .bordered())
+        businessCategoryLabel.setTitle("Бизнес", for: .normal)
+        cultureCategoryLabel = UIButton(configuration: .bordered())
+        cultureCategoryLabel.setTitle("Культура", for: .normal)
+        cultureCategoryLabel.addAction(UIAction(handler: {_ in
+            self.genre.genre = "culture"
+            print(self.genre)
+        }), for: .touchUpInside)
+        businessCategoryLabel.addAction(UIAction(handler: {_ in
+            self.genre.genre = "biznes"
+            print(self.genre)
+        }), for: .touchUpInside)
     }
 }
 
@@ -124,6 +138,13 @@ extension RecomendationsViewController {
         stackViewCategories.snp.makeConstraints { make in
             make.top.equalTo(categoriesLabel.snp.bottom).offset(20)
             make.leading.equalTo(stackViewBook)
+        }
+
+        recomendationsSwiftUIView.view.snp.makeConstraints { make in
+            make.top.equalTo(stackViewCategories.snp.bottom).offset(20)
+            make.leading.equalTo(stackViewBook)
+            make.trailing.equalToSuperview().offset(16)
+            make.height.equalTo(400)
         }
     }
 }

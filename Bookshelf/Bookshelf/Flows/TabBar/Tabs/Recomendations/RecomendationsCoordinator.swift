@@ -9,6 +9,9 @@ import UIKit
 import SwiftUI
 
 // MARK: - Бородач Евгения
+
+// MARK: - Уваров Тимур
+
 class RecomendationsCoordinator: BaseCoordinator {
     // MARK: - Declaration objects
     private var router: RouterProtocol
@@ -30,10 +33,9 @@ class RecomendationsCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension RecomendationsCoordinator {
     private func showRecomendationsController() {
-        let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(imageNetService: ImageNetworkService()))
-        recomendationsController.completionHandler = { book in
-            self.showDetailSUIView(book: book)
-        }
+Uvarov_Task_3
+        let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared))
+
         router.setRootController(recomendationsController)
     }
 
