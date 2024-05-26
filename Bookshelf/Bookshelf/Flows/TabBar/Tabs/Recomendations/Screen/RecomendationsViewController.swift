@@ -12,7 +12,6 @@ import SwiftUI
 
 // MARK: - Бородач Евгения
 
-
 // MARK: - Уваров Тимур
 
 class Genre: ObservableObject {
@@ -22,8 +21,9 @@ class Genre: ObservableObject {
         self.genre = genre
     }
 }
-class RecomendationsViewController: UIViewController, FlowController {
-
+class RecomendationsViewController: UIViewController, FlowControllerWithValue {
+    var completionHandler: ((BookFromApi) -> Void)?
+    typealias OutValue = BookFromApi
     var genre = Genre(genre: "biznes")
 
     // MARK: - Declaration objects
@@ -82,7 +82,17 @@ extension RecomendationsViewController {
             self.genre.genre = "biznes"
             print(self.genre)
         }), for: .touchUpInside)
+
+        let detailBookGesture = UITapGestureRecognizer(target: self, action: #selector(bookLabelTapped))
+                recomendedBookNameLabel.isUserInteractionEnabled = true
+                recomendedBookDescrLabael.isUserInteractionEnabled = true
+                recomendedBookNameLabel.addGestureRecognizer(detailBookGesture)
+                recomendedBookDescrLabael.addGestureRecognizer(detailBookGesture)
     }
+
+    @objc func bookLabelTapped() {
+            completionHandler?(BookFromApi(id: 0, title: "Книга", authors: [Author(name: "Очень хороший автор", birthYear: 0, deathYear: 0)], translators: [], subjects: [], bookshelves: [], languages: [], copyright: false, mediaType: "false", formats: nil, downloadCount: 100))
+        }
 }
 
 // MARK: - Support things

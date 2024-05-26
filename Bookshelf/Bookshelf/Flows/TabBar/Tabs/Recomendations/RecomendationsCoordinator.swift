@@ -33,8 +33,10 @@ class RecomendationsCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension RecomendationsCoordinator {
     private func showRecomendationsController() {
-Uvarov_Task_3
         let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared))
+        recomendationsController.completionHandler = { book in
+                    self.showDetailSUIView(book: book)
+                }
 
         router.setRootController(recomendationsController)
     }
