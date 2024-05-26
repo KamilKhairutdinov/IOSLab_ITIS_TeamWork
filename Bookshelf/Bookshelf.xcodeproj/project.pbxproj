@@ -86,6 +86,8 @@
 		27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */; };
 		BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */; };
 		BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */; };
+		D0689E032C03BD0E003875E9 /* RecomendationsBookUIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0689E022C03BD0E003875E9 /* RecomendationsBookUIViewCell.swift */; };
+		D0689E052C03BDAF003875E9 /* RecomendationsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0689E042C03BDAF003875E9 /* RecomendationsSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +196,8 @@
 		27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D0689E022C03BD0E003875E9 /* RecomendationsBookUIViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsBookUIViewCell.swift; sourceTree = "<group>"; };
+		D0689E042C03BDAF003875E9 /* RecomendationsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -573,6 +577,8 @@
 			children = (
 				27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */,
 				27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */,
+				D0689E022C03BD0E003875E9 /* RecomendationsBookUIViewCell.swift */,
+				D0689E042C03BDAF003875E9 /* RecomendationsSwiftUIView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -806,6 +812,7 @@
 				27FE4EAA2BB1B79F008C038E /* CoordinatorFactoryProtocol.swift in Sources */,
 				27FE4E842BB1B66A008C038E /* SignInFlowCoordinator.swift in Sources */,
 				277EF80C2C03907600643DC2 /* Author.swift in Sources */,
+				D0689E032C03BD0E003875E9 /* RecomendationsBookUIViewCell.swift in Sources */,
 				277EF80A2C03905700643DC2 /* BookFromApi.swift in Sources */,
 				27FE4E892BB1B675008C038E /* TabBarDelegateProtocol.swift in Sources */,
 				0A60B1D02BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift in Sources */,
@@ -826,6 +833,7 @@
 				04C997B82BC3F76400087BEC /* ImageNetworkService.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
 				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,
+				D0689E052C03BDAF003875E9 /* RecomendationsSwiftUIView.swift in Sources */,
 				27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */,
 				0A60B1DD2BB0A07B00CCF145 /* Observable.swift in Sources */,
 				272172732BAE0A4300C2990F /* FlowControllerWithValue.swift in Sources */,

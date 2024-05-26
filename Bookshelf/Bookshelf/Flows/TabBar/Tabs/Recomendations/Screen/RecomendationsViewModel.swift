@@ -7,20 +7,27 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-// MARK: - Бородач Евгения
-class RecomendationsViewModel {
-    private var imageNetService: ImageNetworkServiceProtocol
+// MARK: - Уваров Тимур
+class RecomendationsViewModel: ObservableObject {
 
-    init(imageNetService: ImageNetworkServiceProtocol) {
-        self.imageNetService = imageNetService
+    private let networkingService: NetworkingServiceProtocol
+
+    init(networkingService: NetworkingServiceProtocol) {
+        self.networkingService = networkingService
     }
 
-    func getImage() -> UIImageView {
-        imageNetService.getImage()
-    }
-
-    func setImageLink() -> URL {
-        imageNetService.getURL()
+    func fechBooks(completion: @escaping (([BookFromApi]) -> Void)) {
+        networkingService.fetchBooks { [weak self] result in
+            guard self != nil else { return }
+            switch result {
+            case .success(let bookApiModel):
+                completion(bookApiModel.results)
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion([])
+            }
+        }
     }
 }
