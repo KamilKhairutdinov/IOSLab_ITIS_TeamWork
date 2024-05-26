@@ -30,6 +30,9 @@ class ModuleFactory: ModuleFactoryProtocol {
     func createLibraryModule() -> LibrarySUIView {
         LibrarySUIView(viewModel: LibraryViewModel(networkingService: NetworkingService.shared))
     }
+    func createDetailModule(book: BookFromApi) -> DetailSUIView {
+        DetailSUIView(book: book)
+    }
     func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController {
         ProfileViewController(viewModel: viewModel)
     }

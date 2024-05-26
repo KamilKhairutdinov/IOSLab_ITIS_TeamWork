@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046C59D62C03CD4A002CDD02 /* DetailSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C59D52C03CD4A002CDD02 /* DetailSUIView.swift */; };
 		04C997B62BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */; };
 		04C997B82BC3F76400087BEC /* ImageNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C997B72BC3F76400087BEC /* ImageNetworkService.swift */; };
 		04C997C02BC41F2300087BEC /* ImageNetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C997BF2BC41F2300087BEC /* ImageNetworkServiceMock.swift */; };
@@ -127,6 +128,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		046C59D52C03CD4A002CDD02 /* DetailSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSUIView.swift; sourceTree = "<group>"; };
 		04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		04C997B72BC3F76400087BEC /* ImageNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkService.swift; sourceTree = "<group>"; };
 		04C997BF2BC41F2300087BEC /* ImageNetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkServiceMock.swift; sourceTree = "<group>"; };
@@ -246,6 +248,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046C59D42C03CD1E002CDD02 /* DetailSUIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				046C59D52C03CD4A002CDD02 /* DetailSUIView.swift */,
+			);
+			path = DetailSUIScreen;
+			sourceTree = "<group>";
+		};
 		04C997BC2BC41A7E00087BEC /* MockServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +594,7 @@
 			children = (
 				27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */,
 				27FE4E8F2BB1B6A5008C038E /* Screen */,
+				046C59D42C03CD1E002CDD02 /* DetailSUIScreen */,
 			);
 			path = Recomendations;
 			sourceTree = "<group>";
@@ -827,7 +838,6 @@
 				27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */,
 				27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */,
 				BADDEF192C039BA200288585 /* CoreDataServiceProtocol.swift in Sources */,
-				27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */,
 				BADDEF112C0399FC00288585 /* CoreData.xcdatamodeld in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
@@ -861,6 +871,7 @@
 				27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */,
 				27FE4EA32BB1B6E6008C038E /* ProfileViewModel.swift in Sources */,
 				0A60B1E72BB0AC1600CCF145 /* ValidationService.swift in Sources */,
+				046C59D62C03CD4A002CDD02 /* DetailSUIView.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
 				0A60B1E52BB0AAAF00CCF145 /* ValidationServiceProtocol.swift in Sources */,
 				BADDEF0E2C03944B00288585 /* EditProfileVIewModel.swift in Sources */,
@@ -872,7 +883,6 @@
 				BADDEF0C2C03875D00288585 /* EditProfileView.swift in Sources */,
 				BADDEF162C039B0000288585 /* UserCoreData+CoreDataClass.swift in Sources */,
 				BADDEF172C039B0000288585 /* UserCoreData+CoreDataProperties.swift in Sources */,
-				27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */,
 				BADDEF1B2C039BC700288585 /* UserModel.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
 				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,

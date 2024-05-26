@@ -10,9 +10,11 @@ import SDWebImage
 import SnapKit
 
 // MARK: - Бородач Евгения
-class RecomendationsViewController: UIViewController, FlowController {
+class RecomendationsViewController: UIViewController, FlowControllerWithValue {
+    var completionHandler: ((BookFromApi) -> Void)?
+    typealias OutValue = BookFromApi
+
     // MARK: - Declaration objects
-    var completionHandler: (() -> Void)?
     private var viewModel: RecomendationsViewModel
     private let buttonFactory = ButtonFactory()
     private let labelFactory = LabelFactory()
@@ -56,6 +58,16 @@ extension RecomendationsViewController {
         categoriesLabel = labelFactory.createDefaultLabel(text: "Категории", fontSize: 25, weight: .bold)
         businessCategoryLabel = labelFactory.createDefaultLabel(text: "Бизнес", color: .blue, weight: .bold)
         cultureCategoryLabel = labelFactory.createDefaultLabel(text: "Культура", color: .blue, weight: .bold)
+
+        let detailBookGesture = UITapGestureRecognizer(target: self, action: #selector(bookLabelTapped))
+        recomendedBookNameLabel.isUserInteractionEnabled = true
+        recomendedBookDescrLabael.isUserInteractionEnabled = true
+        recomendedBookNameLabel.addGestureRecognizer(detailBookGesture)
+        recomendedBookDescrLabael.addGestureRecognizer(detailBookGesture)
+    }
+
+    @objc func bookLabelTapped() {
+        completionHandler?(BookFromApi(id: 0, title: "Книга", authors: [Author(name: "Очень хороший автор", birthYear: 0, deathYear: 0)], translators: [], subjects: [], bookshelves: [], languages: [], copyright: false, mediaType: "false", formats: nil, downloadCount: 100))
     }
 }
 
