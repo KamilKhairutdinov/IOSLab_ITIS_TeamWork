@@ -6,15 +6,31 @@
 //
 
 import SwiftUI
-
+// Камил Хайрутдинов
 struct LibrarySUIView: View {
 
-    @StateObject var viewModel: LibraryViewModel
+    // MARK: - body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+                .tint(.blue)
+                .scaleEffect(1.5)
+                .onAppear(perform: {
+                    viewModel.fechBooks { books in
+
+                    }
+                })
+            VStack {
+                List(books) { book in
+                    BookSUIViewCell(book: book)
+                }
+            }
+        }
     }
+
+    // MARK: - Variables
+    @StateObject var viewModel: LibraryViewModel
+    private var books: [BookFromApi] = []
 }
 
-#Preview {
-    LibrarySUIView(viewModel: LibraryViewModel())
-}

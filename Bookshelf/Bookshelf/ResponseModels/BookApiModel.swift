@@ -14,8 +14,3 @@ struct BookApiModel: Decodable {
     let results: [BookFromApi]
 }
 
-
-
-
-
-

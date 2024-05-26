@@ -8,6 +8,7 @@
 import Foundation
 import Moya
 
+// Камил Хайрутдинов
 final class NetworkingService: NetworkingServiceProtocol {
 
     // MARK: - Variables
@@ -25,7 +26,7 @@ final class NetworkingService: NetworkingServiceProtocol {
     func fetchBooks(completion: @escaping (Result<BookApiModel, any Error>) -> Void) {
         request(target: .getBooks, completion: completion)
     }
-    
+
     func fetchBookById(bookId: Int, completion: @escaping (Result<BookFromApi, any Error>) -> Void) {
         request(target: .getBook(bookId: bookId), completion: completion)
     }

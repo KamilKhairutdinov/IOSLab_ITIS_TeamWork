@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BookFromApi: Decodable {
+struct BookFromApi: Decodable, Identifiable {
     let id: Int
     let title: String
     let authors, translators: [Author]

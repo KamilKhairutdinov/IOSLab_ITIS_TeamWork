@@ -30,7 +30,7 @@ class LibraryCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension LibraryCoordinator {
     private func showLibraryController() {
-        let libraryController = UIHostingController(rootView: moduleFactory.createLibraryModule(viewModel: LibraryViewModel()))
+        let libraryController = UIHostingController(rootView: moduleFactory.createLibraryModule())
         router.setRootController(libraryController)
     }
 }

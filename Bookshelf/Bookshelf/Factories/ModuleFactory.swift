@@ -27,8 +27,8 @@ class ModuleFactory: ModuleFactoryProtocol {
     func createRecomendationsModule(viewModel: RecomendationsViewModel) -> RecomendationsViewController {
         RecomendationsViewController(viewModel: viewModel)
     }
-    func createLibraryModule(viewModel: LibraryViewModel) -> LibrarySUIView {
-        LibrarySUIView(viewModel: viewModel)
+    func createLibraryModule() -> LibrarySUIView {
+        LibrarySUIView(viewModel: LibraryViewModel(networkingService: NetworkingService.shared))
     }
     func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController {
         ProfileViewController(viewModel: viewModel)
