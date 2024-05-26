@@ -12,6 +12,7 @@ import SwiftUI
 
 // MARK: - Бородач Евгения
 
+
 // MARK: - Уваров Тимур
 
 class Genre: ObservableObject {
@@ -26,7 +27,6 @@ class RecomendationsViewController: UIViewController, FlowController {
     var genre = Genre(genre: "biznes")
 
     // MARK: - Declaration objects
-    var completionHandler: (() -> Void)?
     private var viewModel: RecomendationsViewModel
     private let buttonFactory = ButtonFactory()
     private let labelFactory = LabelFactory()

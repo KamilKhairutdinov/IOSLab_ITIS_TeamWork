@@ -15,7 +15,7 @@ struct BookFromApi: Decodable, Identifiable {
     let languages: [String]
     let copyright: Bool
     let mediaType: String
-    let formats: Formats
+    let formats: Formats?
     let downloadCount: Int
 
     enum CodingKeys: String, CodingKey {

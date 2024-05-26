@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: - Бородач Евгения
 
@@ -32,7 +33,15 @@ class RecomendationsCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension RecomendationsCoordinator {
     private func showRecomendationsController() {
+Uvarov_Task_3
         let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared))
+
         router.setRootController(recomendationsController)
+    }
+
+    private func showDetailSUIView(book: BookFromApi) {
+        let detailView = moduleFactory.createDetailModule(book: book)
+        let detailController = UIHostingController(rootView: detailView)
+        router.push(detailController, animated: true)
     }
 }

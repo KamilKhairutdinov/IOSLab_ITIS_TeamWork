@@ -20,4 +20,5 @@ protocol ModuleFactoryProtocol {
     func createRecomendationsModule(viewModel: RecomendationsViewModel) -> RecomendationsViewController
     func createLibraryModule() -> LibrarySUIView
     func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController
+    func createDetailModule(book: BookFromApi) -> DetailSUIView
 }

@@ -14,7 +14,7 @@ struct BookSUIViewCell: View {
     // MARK: - Body
     var body: some View {
         VStack(alignment: .center, spacing: 10, content: {
-            WebImage(url: book.formats.imageJPEG)
+            WebImage(url: book.formats?.imageJPEG)
                 .scaledToFit()
             Text(book.title)
                 .font(.title)
