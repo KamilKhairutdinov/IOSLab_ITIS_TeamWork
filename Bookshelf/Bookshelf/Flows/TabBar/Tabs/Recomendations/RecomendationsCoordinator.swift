@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: - Бородач Евгения
 class RecomendationsCoordinator: BaseCoordinator {
@@ -30,6 +31,15 @@ class RecomendationsCoordinator: BaseCoordinator {
 extension RecomendationsCoordinator {
     private func showRecomendationsController() {
         let recomendationsController = RecomendationsViewController(viewModel: RecomendationsViewModel(imageNetService: ImageNetworkService()))
+        recomendationsController.completionHandler = { book in
+            self.showDetailSUIView(book: book)
+        }
         router.setRootController(recomendationsController)
+    }
+
+    private func showDetailSUIView(book: BookFromApi) {
+        let detailView = moduleFactory.createDetailModule(book: book)
+        let detailController = UIHostingController(rootView: detailView)
+        router.push(detailController, animated: true)
     }
 }
