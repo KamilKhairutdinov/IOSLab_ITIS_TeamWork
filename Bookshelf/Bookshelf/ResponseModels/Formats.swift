@@ -10,7 +10,7 @@ import Foundation
 struct Formats: Decodable {
     let textHTML, applicationEpubZip, applicationXMobipocketEbook: String
     let applicationRDFXML: String
-    let imageJPEG: String
+    let imageJPEG: URL
     let textPlainCharsetUsASCII: String
     let applicationOctetStream: String
     let textHTMLCharsetUTF8: String?

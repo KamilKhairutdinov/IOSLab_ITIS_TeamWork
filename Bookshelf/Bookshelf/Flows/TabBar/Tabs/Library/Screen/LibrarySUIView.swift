@@ -11,26 +11,29 @@ struct LibrarySUIView: View {
 
     // MARK: - body
     var body: some View {
-        NavigationStack {
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle())
-                .tint(.blue)
-                .scaleEffect(1.5)
-                .onAppear(perform: {
-                    viewModel.fechBooks { books in
-
-                    }
-                })
-            VStack {
+        VStack(alignment: .center) {
+            if books.isEmpty {
+                ZStack {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .tint(.blue)
+                }
+            } else {
                 List(books) { book in
                     BookSUIViewCell(book: book)
                 }
+                .listStyle(PlainListStyle())
             }
         }
+            .onAppear(perform: {
+                viewModel.fechBooks { books in
+                    self.books = books
+                }
+            })
     }
 
-    // MARK: - Variables
+    // MARK: - Variable
     @StateObject var viewModel: LibraryViewModel
-    private var books: [BookFromApi] = []
+    @State private var books: [BookFromApi] = []
 }
 

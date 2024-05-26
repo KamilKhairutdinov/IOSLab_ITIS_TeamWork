@@ -39,8 +39,6 @@
 		272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */; };
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
 		2733750F2BB1AA5600191795 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733750E2BB1AA5600191795 /* SnapKit */; };
-		2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751D2BB1AB1000191795 /* SDWebImage */; };
-		273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751F2BB1AB1000191795 /* SDWebImageMapKit */; };
 		273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 273375222BB1AC1300191795 /* FirebaseAuth */; };
 		273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 273375242BB1AC1300191795 /* FirebaseFirestore */; };
 		277EF7F62C038ACA00643DC2 /* LibrarySUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF7F52C038ACA00643DC2 /* LibrarySUIView.swift */; };
@@ -57,6 +55,7 @@
 		277EF8102C0390A500643DC2 /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF80F2C0390A500643DC2 /* NetworkingServiceProtocol.swift */; };
 		277EF8122C03910900643DC2 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8112C03910900643DC2 /* NetworkingService.swift */; };
 		277EF8142C03964100643DC2 /* BookSUIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8132C03964100643DC2 /* BookSUIViewCell.swift */; };
+		277EF8182C039C3500643DC2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF8172C039C3500643DC2 /* SDWebImageSwiftUI */; };
 		278309C22BC308650096F9AE /* BookshelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309C12BC308650096F9AE /* BookshelfUITests.swift */; };
 		278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
@@ -205,10 +204,9 @@
 				277EF8032C038D5800643DC2 /* RxMoya in Frameworks */,
 				2733750F2BB1AA5600191795 /* SnapKit in Frameworks */,
 				277EF7FF2C038D5800643DC2 /* Moya in Frameworks */,
-				2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */,
 				277EF7FD2C038D5800643DC2 /* CombineMoya in Frameworks */,
+				277EF8182C039C3500643DC2 /* SDWebImageSwiftUI in Frameworks */,
 				277EF8012C038D5800643DC2 /* ReactiveMoya in Frameworks */,
-				273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */,
 				273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */,
 				273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */,
 			);
@@ -618,14 +616,13 @@
 			name = Bookshelf;
 			packageProductDependencies = (
 				2733750E2BB1AA5600191795 /* SnapKit */,
-				2733751D2BB1AB1000191795 /* SDWebImage */,
-				2733751F2BB1AB1000191795 /* SDWebImageMapKit */,
 				273375222BB1AC1300191795 /* FirebaseAuth */,
 				273375242BB1AC1300191795 /* FirebaseFirestore */,
 				277EF7FC2C038D5800643DC2 /* CombineMoya */,
 				277EF7FE2C038D5800643DC2 /* Moya */,
 				277EF8002C038D5800643DC2 /* ReactiveMoya */,
 				277EF8022C038D5800643DC2 /* RxMoya */,
+				277EF8172C039C3500643DC2 /* SDWebImageSwiftUI */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -706,11 +703,10 @@
 			mainGroup = 2707895C2BAE060B00874D60;
 			packageReferences = (
 				2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */,
-				277EF8152C03988300643DC2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				277EF8162C039C3500643DC2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -1198,14 +1194,6 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage?ysclid=lu6y3e3qa7893733021";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.19.0;
-			};
-		};
 		273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1222,7 +1210,7 @@
 				minimumVersion = 15.0.3;
 			};
 		};
-		277EF8152C03988300643DC2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		277EF8162C039C3500643DC2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
@@ -1250,16 +1238,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		2733751D2BB1AB1000191795 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		2733751F2BB1AB1000191795 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
 		};
 		273375222BB1AC1300191795 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1290,6 +1268,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		277EF8172C039C3500643DC2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277EF8162C039C3500643DC2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
