@@ -78,6 +78,14 @@
 		27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */; };
 		BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */; };
 		BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */; };
+		BADDEF0C2C03875D00288585 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF0B2C03875D00288585 /* EditProfileView.swift */; };
+		BADDEF0E2C03944B00288585 /* EditProfileVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF0D2C03944B00288585 /* EditProfileVIewModel.swift */; };
+		BADDEF112C0399FC00288585 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF0F2C0399FC00288585 /* CoreData.xcdatamodeld */; };
+		BADDEF162C039B0000288585 /* UserCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF142C039B0000288585 /* UserCoreData+CoreDataClass.swift */; };
+		BADDEF172C039B0000288585 /* UserCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF152C039B0000288585 /* UserCoreData+CoreDataProperties.swift */; };
+		BADDEF192C039BA200288585 /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF182C039BA200288585 /* CoreDataServiceProtocol.swift */; };
+		BADDEF1B2C039BC700288585 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF1A2C039BC700288585 /* UserModel.swift */; };
+		BADDEF1D2C039BF600288585 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDEF1C2C039BF600288585 /* CoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +173,14 @@
 		27FE4EAE2BB1B7DE008C038E /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BADDEF0B2C03875D00288585 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		BADDEF0D2C03944B00288585 /* EditProfileVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVIewModel.swift; sourceTree = "<group>"; };
+		BADDEF102C0399FC00288585 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		BADDEF142C039B0000288585 /* UserCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BADDEF152C039B0000288585 /* UserCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BADDEF182C039BA200288585 /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
+		BADDEF1A2C039BC700288585 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BADDEF1C2C039BF600288585 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +268,7 @@
 				0A60B1DF2BB0A62A00CCF145 /* Protocols */,
 				0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */,
 				BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */,
+				BADDEF1C2C039BF600288585 /* CoreDataService.swift */,
 				04C997B72BC3F76400087BEC /* ImageNetworkService.swift */,
 			);
 			path = Services;
@@ -263,6 +280,7 @@
 				BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */,
 				0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */,
 				04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */,
+				BADDEF182C039BA200288585 /* CoreDataServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -300,6 +318,7 @@
 				0A60B1D62BB0837D00CCF145 /* GoogleService-Info.plist */,
 				272172632BAE089800C2990F /* Factories */,
 				2707897D2BAE06D600874D60 /* Supporting Files */,
+				BADDEF132C039A3800288585 /* CoreData */,
 			);
 			path = Bookshelf;
 			sourceTree = "<group>";
@@ -509,6 +528,7 @@
 		27FE4E8D2BB1B68E008C038E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				BADDEF0A2C03874F00288585 /* EditProfile */,
 				27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */,
 				27FE4E902BB1B6AF008C038E /* Screen */,
 			);
@@ -549,6 +569,26 @@
 				27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		BADDEF0A2C03874F00288585 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				BADDEF0B2C03875D00288585 /* EditProfileView.swift */,
+				BADDEF0D2C03944B00288585 /* EditProfileVIewModel.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		BADDEF132C039A3800288585 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BADDEF0F2C0399FC00288585 /* CoreData.xcdatamodeld */,
+				BADDEF142C039B0000288585 /* UserCoreData+CoreDataClass.swift */,
+				BADDEF152C039B0000288585 /* UserCoreData+CoreDataProperties.swift */,
+				BADDEF1A2C039BC700288585 /* UserModel.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -738,7 +778,9 @@
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
 				27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */,
 				27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */,
+				BADDEF192C039BA200288585 /* CoreDataServiceProtocol.swift in Sources */,
 				27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */,
+				BADDEF112C0399FC00288585 /* CoreData.xcdatamodeld in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */,
@@ -760,17 +802,23 @@
 				27FE4E932BB1B6C0008C038E /* LibraryCoordinator.swift in Sources */,
 				04C997B62BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift in Sources */,
 				27FE4E9F2BB1B6DD008C038E /* RecomendationsViewController.swift in Sources */,
+				BADDEF1D2C039BF600288585 /* CoreDataService.swift in Sources */,
 				0A60B1D32BAFAF7700CCF145 /* SignUpController.swift in Sources */,
 				27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */,
 				27FE4EA32BB1B6E6008C038E /* ProfileViewModel.swift in Sources */,
 				0A60B1E72BB0AC1600CCF145 /* ValidationService.swift in Sources */,
 				272172682BAE094300C2990F /* Router.swift in Sources */,
 				0A60B1E52BB0AAAF00CCF145 /* ValidationServiceProtocol.swift in Sources */,
+				BADDEF0E2C03944B00288585 /* EditProfileVIewModel.swift in Sources */,
 				27FE4E6E2BB1B600008C038E /* ModuleFactory.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
 				27FE4E812BB1B663008C038E /* SignInViewModel.swift in Sources */,
 				04C997B82BC3F76400087BEC /* ImageNetworkService.swift in Sources */,
+				BADDEF0C2C03875D00288585 /* EditProfileView.swift in Sources */,
+				BADDEF162C039B0000288585 /* UserCoreData+CoreDataClass.swift in Sources */,
+				BADDEF172C039B0000288585 /* UserCoreData+CoreDataProperties.swift in Sources */,
 				27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */,
+				BADDEF1B2C039BC700288585 /* UserModel.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
 				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,
 				27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */,
@@ -1221,6 +1269,19 @@
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BADDEF0F2C0399FC00288585 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BADDEF102C0399FC00288585 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = BADDEF102C0399FC00288585 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2707895D2BAE060B00874D60 /* Project object */;
 }

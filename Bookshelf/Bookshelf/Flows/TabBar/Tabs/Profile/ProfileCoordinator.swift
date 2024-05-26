@@ -30,8 +30,10 @@ class ProfileCoordinator: BaseCoordinator {
 extension ProfileCoordinator {
     private func showProfileController() {
         let authService = AuthService()
-        let imageNetService = ImageNetworkService()
-        let viewModel = ProfileViewModel(authService: authService, imageNetService: imageNetService)
+        let viewModel = ProfileViewModel(
+            authService: authService,
+            coreDataService: CoreDataService.shared
+        )
         let profileController = ProfileViewController(viewModel: viewModel)
 
         profileController.completionHandler = { [weak self] status in
