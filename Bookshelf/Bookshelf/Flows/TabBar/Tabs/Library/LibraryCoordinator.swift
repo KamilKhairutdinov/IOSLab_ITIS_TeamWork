@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: - Бородач Евгения
 class LibraryCoordinator: BaseCoordinator {
@@ -29,7 +30,7 @@ class LibraryCoordinator: BaseCoordinator {
 // MARK: - Configure flow actions
 extension LibraryCoordinator {
     private func showLibraryController() {
-        let libraryController = LibraryViewController(viewModel: LibraryViewModel())
+        let libraryController = UIHostingController(rootView: moduleFactory.createLibraryModule(viewModel: LibraryViewModel()))
         router.setRootController(libraryController)
     }
 }

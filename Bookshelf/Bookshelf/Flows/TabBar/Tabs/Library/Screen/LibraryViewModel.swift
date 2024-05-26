@@ -2,11 +2,11 @@
 //  LibraryViewModel.swift
 //  Bookshelf
 //
-//  Created by evaklq on 2024-03-25.
+//  Created by Камил Хайрутдинов on 26.05.2024.
 //
 
 import Foundation
 
-// MARK: - Бородач Евгения
-class LibraryViewModel {
+final class LibraryViewModel: ObservableObject {
+
 }

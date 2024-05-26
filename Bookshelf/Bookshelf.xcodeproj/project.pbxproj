@@ -39,13 +39,16 @@
 		272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */; };
 		272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172832BAE0F5100C2990F /* AuthViewController.swift */; };
 		2733750F2BB1AA5600191795 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733750E2BB1AA5600191795 /* SnapKit */; };
-		273375112BB1AA5600191795 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 273375102BB1AA5600191795 /* SnapKit-Dynamic */; };
-		273375192BB1AAEA00191795 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 273375182BB1AAEA00191795 /* Alamofire */; };
-		2733751B2BB1AAEA00191795 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751A2BB1AAEA00191795 /* AlamofireDynamic */; };
 		2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751D2BB1AB1000191795 /* SDWebImage */; };
 		273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2733751F2BB1AB1000191795 /* SDWebImageMapKit */; };
 		273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 273375222BB1AC1300191795 /* FirebaseAuth */; };
 		273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 273375242BB1AC1300191795 /* FirebaseFirestore */; };
+		277EF7F62C038ACA00643DC2 /* LibrarySUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF7F52C038ACA00643DC2 /* LibrarySUIView.swift */; };
+		277EF7FA2C038BBE00643DC2 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF7F92C038BBE00643DC2 /* LibraryViewModel.swift */; };
+		277EF7FD2C038D5800643DC2 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF7FC2C038D5800643DC2 /* CombineMoya */; };
+		277EF7FF2C038D5800643DC2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF7FE2C038D5800643DC2 /* Moya */; };
+		277EF8012C038D5800643DC2 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF8002C038D5800643DC2 /* ReactiveMoya */; };
+		277EF8032C038D5800643DC2 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF8022C038D5800643DC2 /* RxMoya */; };
 		278309C22BC308650096F9AE /* BookshelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309C12BC308650096F9AE /* BookshelfUITests.swift */; };
 		278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
@@ -66,8 +69,6 @@
 		27FE4E932BB1B6C0008C038E /* LibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E922BB1B6C0008C038E /* LibraryCoordinator.swift */; };
 		27FE4E952BB1B6C8008C038E /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */; };
 		27FE4E972BB1B6CD008C038E /* RecomendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */; };
-		27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */; };
-		27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */; };
 		27FE4E9E2BB1B6DD008C038E /* RecomendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */; };
 		27FE4E9F2BB1B6DD008C038E /* RecomendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */; };
 		27FE4EA22BB1B6E6008C038E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE4EA02BB1B6E6008C038E /* ProfileViewController.swift */; };
@@ -96,6 +97,19 @@
 			remoteInfo = Bookshelf;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27ABC3462C02071C00CAF20A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkServiceProtocol.swift; sourceTree = "<group>"; };
@@ -131,6 +145,8 @@
 		272172802BAE0F2A00C2990F /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 		272172832BAE0F5100C2990F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		2765695D2BC3D92D00B0323E /* Bookshelf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Bookshelf.xcodeproj; sourceTree = "<group>"; };
+		277EF7F52C038ACA00643DC2 /* LibrarySUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySUIView.swift; sourceTree = "<group>"; };
+		277EF7F92C038BBE00643DC2 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		278309BF2BC308650096F9AE /* BookshelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278309C12BC308650096F9AE /* BookshelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfUITests.swift; sourceTree = "<group>"; };
 		278309CE2BC3089E0096F9AE /* BookshelfUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +169,6 @@
 		27FE4E922BB1B6C0008C038E /* LibraryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
 		27FE4E942BB1B6C8008C038E /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		27FE4E962BB1B6CD008C038E /* RecomendationsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsCoordinator.swift; sourceTree = "<group>"; };
-		27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
-		27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		27FE4E9C2BB1B6DD008C038E /* RecomendationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsViewModel.swift; sourceTree = "<group>"; };
 		27FE4E9D2BB1B6DD008C038E /* RecomendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationsViewController.swift; sourceTree = "<group>"; };
 		27FE4EA02BB1B6E6008C038E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -172,14 +186,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273375192BB1AAEA00191795 /* Alamofire in Frameworks */,
-				2733751B2BB1AAEA00191795 /* AlamofireDynamic in Frameworks */,
+				277EF8032C038D5800643DC2 /* RxMoya in Frameworks */,
 				2733750F2BB1AA5600191795 /* SnapKit in Frameworks */,
+				277EF7FF2C038D5800643DC2 /* Moya in Frameworks */,
 				2733751E2BB1AB1000191795 /* SDWebImage in Frameworks */,
+				277EF7FD2C038D5800643DC2 /* CombineMoya in Frameworks */,
+				277EF8012C038D5800643DC2 /* ReactiveMoya in Frameworks */,
 				273375202BB1AB1000191795 /* SDWebImageMapKit in Frameworks */,
 				273375252BB1AC1300191795 /* FirebaseFirestore in Frameworks */,
 				273375232BB1AC1300191795 /* FirebaseAuth in Frameworks */,
-				273375112BB1AA5600191795 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,8 +560,8 @@
 		27FE4E912BB1B6B4008C038E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				27FE4E992BB1B6D5008C038E /* LibraryViewController.swift */,
-				27FE4E982BB1B6D5008C038E /* LibraryViewModel.swift */,
+				277EF7F52C038ACA00643DC2 /* LibrarySUIView.swift */,
+				277EF7F92C038BBE00643DC2 /* LibraryViewModel.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -562,6 +577,7 @@
 				270789622BAE060B00874D60 /* Frameworks */,
 				270789632BAE060B00874D60 /* Resources */,
 				27A18DF82BAEE66100FF508F /* Swiftlint */,
+				27ABC3462C02071C00CAF20A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -570,13 +586,14 @@
 			name = Bookshelf;
 			packageProductDependencies = (
 				2733750E2BB1AA5600191795 /* SnapKit */,
-				273375102BB1AA5600191795 /* SnapKit-Dynamic */,
-				273375182BB1AAEA00191795 /* Alamofire */,
-				2733751A2BB1AAEA00191795 /* AlamofireDynamic */,
 				2733751D2BB1AB1000191795 /* SDWebImage */,
 				2733751F2BB1AB1000191795 /* SDWebImageMapKit */,
 				273375222BB1AC1300191795 /* FirebaseAuth */,
 				273375242BB1AC1300191795 /* FirebaseFirestore */,
+				277EF7FC2C038D5800643DC2 /* CombineMoya */,
+				277EF7FE2C038D5800643DC2 /* Moya */,
+				277EF8002C038D5800643DC2 /* ReactiveMoya */,
+				277EF8022C038D5800643DC2 /* RxMoya */,
 			);
 			productName = Bookshelf;
 			productReference = 270789652BAE060B00874D60 /* Bookshelf.app */;
@@ -657,10 +674,10 @@
 			mainGroup = 2707895C2BAE060B00874D60;
 			packageReferences = (
 				2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 270789662BAE060B00874D60 /* Products */;
 			projectDirPath = "";
@@ -738,7 +755,6 @@
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
 				27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */,
 				27FE4EAC2BB1B79F008C038E /* ButtonFactoryProtocol.swift in Sources */,
-				27FE4E9A2BB1B6D5008C038E /* LibraryViewModel.swift in Sources */,
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */,
@@ -769,8 +785,8 @@
 				27FE4E6E2BB1B600008C038E /* ModuleFactory.swift in Sources */,
 				272172812BAE0F2A00C2990F /* AuthFlowCoordinator.swift in Sources */,
 				27FE4E812BB1B663008C038E /* SignInViewModel.swift in Sources */,
+				277EF7FA2C038BBE00643DC2 /* LibraryViewModel.swift in Sources */,
 				04C997B82BC3F76400087BEC /* ImageNetworkService.swift in Sources */,
-				27FE4E9B2BB1B6D5008C038E /* LibraryViewController.swift in Sources */,
 				272172842BAE0F5100C2990F /* AuthViewController.swift in Sources */,
 				27FE4E822BB1B663008C038E /* SignInViewController.swift in Sources */,
 				27FE4E712BB1B600008C038E /* ButtonFactory.swift in Sources */,
@@ -780,6 +796,7 @@
 				BA3D1E7E2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift in Sources */,
 				27FE4EAB2BB1B79F008C038E /* LabelFactoryProtocol.swift in Sources */,
 				2707896B2BAE060B00874D60 /* SceneDelegate.swift in Sources */,
+				277EF7F62C038ACA00643DC2 /* LibrarySUIView.swift in Sources */,
 				27FE4E9E2BB1B6DD008C038E /* RecomendationsViewModel.swift in Sources */,
 				27FE4E972BB1B6CD008C038E /* RecomendationsCoordinator.swift in Sources */,
 			);
@@ -1140,14 +1157,6 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.9.0;
-			};
-		};
 		2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage?ysclid=lu6y3e3qa7893733021";
@@ -1162,6 +1171,14 @@
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 10.23.0;
+			};
+		};
+		277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
 			};
 		};
 		278309D92BC317650096F9AE /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
@@ -1185,21 +1202,6 @@
 			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		273375102BB1AA5600191795 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2733750D2BB1AA5600191795 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-		273375182BB1AAEA00191795 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		2733751A2BB1AAEA00191795 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 273375172BB1AAEA00191795 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		2733751D2BB1AB1000191795 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2733751C2BB1AB1000191795 /* XCRemoteSwiftPackageReference "SDWebImage" */;
@@ -1219,6 +1221,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 273375212BB1AC1300191795 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		277EF7FC2C038D5800643DC2 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		277EF7FE2C038D5800643DC2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		277EF8002C038D5800643DC2 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		277EF8022C038D5800643DC2 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277EF7FB2C038D5800643DC2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

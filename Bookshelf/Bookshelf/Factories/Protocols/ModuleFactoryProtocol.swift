@@ -18,6 +18,6 @@ protocol ModuleFactoryProtocol {
 
     // MARK: - Бородач Евгения
     func createRecomendationsModule(viewModel: RecomendationsViewModel) -> RecomendationsViewController
-    func createLibraryModule(viewModel: LibraryViewModel) -> LibraryViewController
+    func createLibraryModule(viewModel: LibraryViewModel) -> LibrarySUIView
     func createProfileModule(viewModel: ProfileViewModel) -> ProfileViewController
 }
