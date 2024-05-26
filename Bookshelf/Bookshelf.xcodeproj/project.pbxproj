@@ -49,6 +49,13 @@
 		277EF7FF2C038D5800643DC2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF7FE2C038D5800643DC2 /* Moya */; };
 		277EF8012C038D5800643DC2 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF8002C038D5800643DC2 /* ReactiveMoya */; };
 		277EF8032C038D5800643DC2 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 277EF8022C038D5800643DC2 /* RxMoya */; };
+		277EF8052C038DBC00643DC2 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8042C038DBC00643DC2 /* APITarget.swift */; };
+		277EF8082C038FB700643DC2 /* BookApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8072C038FB700643DC2 /* BookApiModel.swift */; };
+		277EF80A2C03905700643DC2 /* BookFromApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8092C03905700643DC2 /* BookFromApi.swift */; };
+		277EF80C2C03907600643DC2 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF80B2C03907600643DC2 /* Author.swift */; };
+		277EF80E2C03908300643DC2 /* Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF80D2C03908300643DC2 /* Formats.swift */; };
+		277EF8102C0390A500643DC2 /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF80F2C0390A500643DC2 /* NetworkingServiceProtocol.swift */; };
+		277EF8122C03910900643DC2 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF8112C03910900643DC2 /* NetworkingService.swift */; };
 		278309C22BC308650096F9AE /* BookshelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309C12BC308650096F9AE /* BookshelfUITests.swift */; };
 		278309D12BC3089E0096F9AE /* BookshelfUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278309D02BC3089E0096F9AE /* BookshelfUnitTests.swift */; };
 		27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A18DF92BAEE8D900FF508F /* ModuleFactoryProtocol.swift */; };
@@ -147,6 +154,13 @@
 		2765695D2BC3D92D00B0323E /* Bookshelf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Bookshelf.xcodeproj; sourceTree = "<group>"; };
 		277EF7F52C038ACA00643DC2 /* LibrarySUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySUIView.swift; sourceTree = "<group>"; };
 		277EF7F92C038BBE00643DC2 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		277EF8042C038DBC00643DC2 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		277EF8072C038FB700643DC2 /* BookApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookApiModel.swift; sourceTree = "<group>"; };
+		277EF8092C03905700643DC2 /* BookFromApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFromApi.swift; sourceTree = "<group>"; };
+		277EF80B2C03907600643DC2 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		277EF80D2C03908300643DC2 /* Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formats.swift; sourceTree = "<group>"; };
+		277EF80F2C0390A500643DC2 /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
+		277EF8112C03910900643DC2 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		278309BF2BC308650096F9AE /* BookshelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278309C12BC308650096F9AE /* BookshelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfUITests.swift; sourceTree = "<group>"; };
 		278309CE2BC3089E0096F9AE /* BookshelfUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +282,8 @@
 				0A60B1E62BB0AC1600CCF145 /* ValidationService.swift */,
 				BA3D1E7F2BC3DDA40079FCB9 /* AuthService.swift */,
 				04C997B72BC3F76400087BEC /* ImageNetworkService.swift */,
+				277EF8042C038DBC00643DC2 /* APITarget.swift */,
+				277EF8112C03910900643DC2 /* NetworkingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,6 +294,7 @@
 				BA3D1E7D2BC3DD3D0079FCB9 /* AuthServiceProtocol.swift */,
 				0A60B1E42BB0AAAF00CCF145 /* ValidationServiceProtocol.swift */,
 				04C997B52BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift */,
+				277EF80F2C0390A500643DC2 /* NetworkingServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -306,6 +323,7 @@
 		270789672BAE060B00874D60 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
+				277EF8062C038F8900643DC2 /* ResponseModels */,
 				2707897C2BAE06D000874D60 /* App */,
 				272172622BAE07CD00C2990F /* Router */,
 				272172612BAE07C600C2990F /* Coordinator */,
@@ -424,6 +442,17 @@
 		2765695E2BC3D92D00B0323E /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
+			sourceTree = "<group>";
+		};
+		277EF8062C038F8900643DC2 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				277EF8072C038FB700643DC2 /* BookApiModel.swift */,
+				277EF8092C03905700643DC2 /* BookFromApi.swift */,
+				277EF80B2C03907600643DC2 /* Author.swift */,
+				277EF80D2C03908300643DC2 /* Formats.swift */,
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 		278309C02BC308650096F9AE /* BookshelfUITests */ = {
@@ -751,6 +780,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277EF80E2C03908300643DC2 /* Formats.swift in Sources */,
+				277EF8102C0390A500643DC2 /* NetworkingServiceProtocol.swift in Sources */,
 				0A60B1E92BB0AFF800CCF145 /* ServiceFactory.swift in Sources */,
 				2721726F2BAE0A0500C2990F /* FlowController.swift in Sources */,
 				27FE4E882BB1B675008C038E /* TabBarCoordinator.swift in Sources */,
@@ -758,12 +789,14 @@
 				272172762BAE0AF800C2990F /* BaseCoordinator.swift in Sources */,
 				272172782BAE0C0900C2990F /* AppCoordinator.swift in Sources */,
 				BA3D1E802BC3DDA40079FCB9 /* AuthService.swift in Sources */,
+				277EF8082C038FB700643DC2 /* BookApiModel.swift in Sources */,
 				27FE4EAF2BB1B7DE008C038E /* URLBuilder.swift in Sources */,
 				27FE4EA22BB1B6E6008C038E /* ProfileViewController.swift in Sources */,
 				0A60B1D52BB07DD500CCF145 /* SignUpViewModel.swift in Sources */,
 				27FE4E952BB1B6C8008C038E /* ProfileCoordinator.swift in Sources */,
 				27A18DFA2BAEE8D900FF508F /* ModuleFactoryProtocol.swift in Sources */,
 				270789692BAE060B00874D60 /* AppDelegate.swift in Sources */,
+				277EF8052C038DBC00643DC2 /* APITarget.swift in Sources */,
 				27FE4E8A2BB1B675008C038E /* TabBarViewController.swift in Sources */,
 				0A60B1DA2BB09BD800CCF145 /* TextFieldFactory.swift in Sources */,
 				2721726D2BAE09DB00C2990F /* CoordinatorProtocol.swift in Sources */,
@@ -771,10 +804,13 @@
 				27FE4E6F2BB1B600008C038E /* LabelFactory.swift in Sources */,
 				27FE4EAA2BB1B79F008C038E /* CoordinatorFactoryProtocol.swift in Sources */,
 				27FE4E842BB1B66A008C038E /* SignInFlowCoordinator.swift in Sources */,
+				277EF80C2C03907600643DC2 /* Author.swift in Sources */,
+				277EF80A2C03905700643DC2 /* BookFromApi.swift in Sources */,
 				27FE4E892BB1B675008C038E /* TabBarDelegateProtocol.swift in Sources */,
 				0A60B1D02BAFA4DB00CCF145 /* SignUpFlowCoordinator.swift in Sources */,
 				27FE4E932BB1B6C0008C038E /* LibraryCoordinator.swift in Sources */,
 				04C997B62BC3F6A800087BEC /* ImageNetworkServiceProtocol.swift in Sources */,
+				277EF8122C03910900643DC2 /* NetworkingService.swift in Sources */,
 				27FE4E9F2BB1B6DD008C038E /* RecomendationsViewController.swift in Sources */,
 				0A60B1D32BAFAF7700CCF145 /* SignUpController.swift in Sources */,
 				27FE4E702BB1B600008C038E /* CoordinatorFactory.swift in Sources */,
