@@ -10,10 +10,7 @@ import SDWebImage
 import SnapKit
 import SwiftUI
 
-// MARK: - Бородач Евгения
-
 // MARK: - Уваров Тимур
-
 class Genre: ObservableObject {
     @Published var genre: String
 
@@ -21,6 +18,8 @@ class Genre: ObservableObject {
         self.genre = genre
     }
 }
+
+// MARK: - Бородач Евгения
 class RecomendationsViewController: UIViewController, FlowControllerWithValue {
     var completionHandler: ((BookFromApi) -> Void)?
     typealias OutValue = BookFromApi
@@ -38,7 +37,7 @@ class RecomendationsViewController: UIViewController, FlowControllerWithValue {
     private lazy var categoriesLabel = UILabel()
     private lazy var businessCategoryLabel = UIButton()
     private lazy var cultureCategoryLabel = UIButton()
-    private lazy var recomendationsSwiftUIView = UIHostingController(rootView: RecomendationsSwiftUIView(genre: genre, viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared)))
+    private lazy var recomendationsSwiftUIView = UIHostingController(rootView: RecomendationsSwiftUIView(genre: genre, viewModel: RecomendationsViewModel(networkingService: NetworkingService.shared, imageNetService: ImageNetworkService())))
 
     // MARK: - Init
     init(viewModel: RecomendationsViewModel) {
@@ -63,8 +62,8 @@ class RecomendationsViewController: UIViewController, FlowControllerWithValue {
 // MARK: - Уваров Тимур
 extension RecomendationsViewController {
     private func configureUIItems() {
-//        let image = viewModel.getImage()
-//        recomendedBookImage = image
+        let image = viewModel.getImage()
+        recomendedBookImage = image
 
         recomendedLabel = labelFactory.createDefaultLabel(text: "Для Вас", fontSize: 25, weight: .bold)
         recomendedBookNameLabel = labelFactory.createDefaultLabel(text: "Книга")
@@ -83,16 +82,16 @@ extension RecomendationsViewController {
             print(self.genre)
         }), for: .touchUpInside)
 
+        // Бородач Женя
         let detailBookGesture = UITapGestureRecognizer(target: self, action: #selector(bookLabelTapped))
-                recomendedBookNameLabel.isUserInteractionEnabled = true
-                recomendedBookDescrLabael.isUserInteractionEnabled = true
-                recomendedBookNameLabel.addGestureRecognizer(detailBookGesture)
-                recomendedBookDescrLabael.addGestureRecognizer(detailBookGesture)
+        recomendedBookNameLabel.isUserInteractionEnabled = true
+        recomendedBookNameLabel.addGestureRecognizer(detailBookGesture)
     }
 
     @objc func bookLabelTapped() {
-            completionHandler?(BookFromApi(id: 0, title: "Книга", authors: [Author(name: "Очень хороший автор", birthYear: 0, deathYear: 0)], translators: [], subjects: [], bookshelves: [], languages: [], copyright: false, mediaType: "false", formats: nil, downloadCount: 100))
-        }
+        completionHandler?(BookFromApi(id: 0, title: "Книга", authors: [Author(name: "Очень хороший автор", birthYear: 0, deathYear: 0)], translators: [], subjects: [], bookshelves: [], languages: [], copyright: false, mediaType: "false", formats: nil, downloadCount: 100))
+    }
+    //
 }
 
 // MARK: - Support things

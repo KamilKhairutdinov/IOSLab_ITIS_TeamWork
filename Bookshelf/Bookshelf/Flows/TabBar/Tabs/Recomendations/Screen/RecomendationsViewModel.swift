@@ -11,11 +11,16 @@ import SwiftUI
 
 // MARK: - Уваров Тимур
 class RecomendationsViewModel: ObservableObject {
-
+    private var imageNetService: ImageNetworkServiceProtocol
     private let networkingService: NetworkingServiceProtocol
 
-    init(networkingService: NetworkingServiceProtocol) {
+    init(networkingService: NetworkingServiceProtocol, imageNetService: ImageNetworkServiceProtocol) {
         self.networkingService = networkingService
+        self.imageNetService = imageNetService
+    }
+
+    func getImage() -> UIImageView {
+        imageNetService.getImage()
     }
 
     func fechBooks(completion: @escaping (([BookFromApi]) -> Void)) {
