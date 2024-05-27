@@ -63,3 +63,15 @@
   - Переделал экран профиля
   - Экран редактирования профиля на swiftui (EditProfileView, EditProfileViewModel)
   - СoreData service для сохранения данных о пользователе
+
+- Хайррутдинов Камил
+  - Networking service
+  - LibrarySUIView, LibraryViewModel, BookSUIViewCell
+
+- Бородач Женя
+  - DetailSUIView
+
+- Уваров Тимур
+  - RecomendationsSwiftUIView, RecomendationsBookUIViewCell
+  - Переделал RecomendationsViewController
+  
