@@ -56,3 +56,10 @@
   - UI тесты SignUpController
   - Рефактор SignUpController
   - Snapshot тесты SignUpController & TabBarViewController
+
+
+# ДЗ 3
+- Абрамов Кирилл
+  - Переделал экран профиля
+  - Экран редактирования профиля на swiftui (EditProfileView, EditProfileViewModel)
+  - СoreData service для сохранения данных о пользователе
